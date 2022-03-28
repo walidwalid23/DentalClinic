@@ -1,5 +1,5 @@
 <?php
-//receiving json data from ajax (true to receive json as associative array)
+//Receiving json data from ajax (true to receive json as associative array)
 $data = json_decode(file_get_contents("php://input"),true);
 $username=$data["username"];
 $password=$data["password"];
