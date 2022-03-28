@@ -65,7 +65,6 @@ if($formValidate){
         setcookie("email",$userdata_array["email"],time()+$daysInSeconds);
         setcookie("age",$userdata_array["age"],time()+$daysInSeconds);
         setcookie("profileImage",$userdata_array["profileImage"],time()+$daysInSeconds);
-        setcookie("ID",$userdata_array["hikerID"],time()+$daysInSeconds);
         setcookie("type",$userdata_array["type"],time()+$daysInSeconds);
         }
         else{
