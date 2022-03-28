@@ -79,7 +79,7 @@ if($usernameValid && $passwordValid && $emailValidate && $dateValid){
 
 if($formValidate){
     try{
-// VALIDATE IF THE USERNAME IS UNIQUE
+// VALIDATE IF THE USERNAME IS UNIQUE.
 $username_unique=false;
 //CONNECTING TO THE DATABASE
 $db_conn=mysqli_connect("localhost","root","","hiking");
