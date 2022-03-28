@@ -104,7 +104,7 @@ else{$username_unique=true;}
     if(!$db_conn){
         die("couldn't connect to the database");}
     //checking if EMAIL IS UNIQUE
-    $email_query=$db_conn->query("SELECT email FROM hiker WHERE email='$email'");
+    $email_query=$db_conn->query("SELECT email FROM users WHERE email='$email'");
     $repeated_email_array=mysqli_fetch_array($email_query);
    if($repeated_email_array){
        //SEND ERROR MESSAGE TO USER
@@ -120,7 +120,7 @@ else{$username_unique=true;}
     //generating UNIQUE ID FOR EACH HIKER
     $hiker_id=time()*rand(2,100);
     //MAKING SURE THE ID IS UNIQUE OR ELSE GENERATE A NEW ONE
-    $id_query=$db_conn->query("SELECT * FROM hiker WHERE hikerID='$hiker_id'");
+    $id_query=$db_conn->query("SELECT * FROM users WHERE userID='$hiker_id'");
     $hiker_id_repeated=mysqli_fetch_array($id_query);
     if($hiker_id_repeated){
         //generate a new ID
@@ -130,7 +130,7 @@ else{$username_unique=true;}
     //hashing the password
     $password=password_hash($password,PASSWORD_DEFAULT);
     //INSERTING USER DATA IN THE DATABASE
-    $insertResult=$db_conn->query("INSERT INTO hiker values('$hiker_id','$username',$age,'$email','$password','defaultpicture.jpg','user')");
+    $insertResult=$db_conn->query("INSERT INTO users values('$hiker_id','$username',$age,'$email','$password','defaultpicture.jpg','user')");
     if($insertResult){
      //DATA IS INSERTED SUCCESSFULLY
      //CREATE INBOX FOR THIS USER
