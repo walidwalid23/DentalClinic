@@ -42,7 +42,7 @@ if($formValidate){
     $db_conn=mysqli_connect("localhost","root","","dentalclinic");
     if(!$db_conn){echo '<h5 style="color:red;margin-left:200px;">Couldn"t Connect To Database<br>';}
     //checking if USERNAME IS UNIQUE
-    $username_query=$db_conn->query("SELECT * FROM hiker WHERE username='$username'");
+    $username_query=$db_conn->query("SELECT * FROM users WHERE username='$username'");
     $userdata_array=mysqli_fetch_array($username_query);
 
     if($userdata_array){

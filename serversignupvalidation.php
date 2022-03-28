@@ -82,10 +82,10 @@ if($formValidate){
 // VALIDATE IF THE USERNAME IS UNIQUE.
 $username_unique=false;
 //CONNECTING TO THE DATABASE
-$db_conn=mysqli_connect("localhost","root","","hiking");
+$db_conn=mysqli_connect("localhost","root","","dentalclinic");
 if(!$db_conn){echo '<h5 style="color:red;margin-left:200px;">Couldn"t Connect To Database<br>';}
 //checking if USERNAME IS UNIQUE
-$username_query=$db_conn->query("SELECT username FROM hiker WHERE username='$username'");
+$username_query=$db_conn->query("SELECT username FROM users WHERE username='$username'");
 $repeated_username_array=mysqli_fetch_array($username_query);
 
 if($repeated_username_array){
