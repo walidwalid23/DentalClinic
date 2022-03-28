@@ -39,7 +39,7 @@ if($formValidate){
     $username_exists=false;
     $password_match=false;
     //CONNECTING TO THE DATABASE
-    $db_conn=mysqli_connect("localhost","root","","hiking");
+    $db_conn=mysqli_connect("localhost","root","","dentalclinic");
     if(!$db_conn){echo '<h5 style="color:red;margin-left:200px;">Couldn"t Connect To Database<br>';}
     //checking if USERNAME IS UNIQUE
     $username_query=$db_conn->query("SELECT * FROM hiker WHERE username='$username'");
@@ -76,7 +76,7 @@ if($formValidate){
             $_SESSION["email"]=$userdata_array["email"];
             $_SESSION["age"]=$userdata_array["age"];
             $_SESSION["profileImage"]=$userdata_array["profileImage"];
-            $_SESSION["ID"]=$userdata_array["hikerID"];
+            $_SESSION["ID"]=$userdata_array["userID"];
             $_SESSION["type"]=$userdata_array["type"];
 
         }
