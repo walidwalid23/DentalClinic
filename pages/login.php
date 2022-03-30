@@ -1,7 +1,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>About Us</title>
+    <title>Login</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <!-- Favicon -->
     <link href="../img/favicon.ico" rel="icon">
@@ -40,6 +40,8 @@
  <!-- Navbar Start -->
 <?php
 include '../includes/navbar.inc.php';
+ #empty string because it's a button not a link to get highlighted when visited
+display_navbar("");
     ?>
  <!-- Navbar End -->
  <!-- Login Form Start -->
@@ -65,7 +67,7 @@ include '../includes/navbar.inc.php';
            <label for="remember-box"  class="form-check-label"><b>Remember me</b></label>
         </div>
         <p id="not-registered-error" class="login-error-message"></p>
-        
+
         <input type="submit" class="btn btn-primary" value="Login">
         <br>
         <span id="noaccount-text"> Don't Have An Account? </span>

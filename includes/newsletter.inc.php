@@ -1,14 +1,22 @@
+  
+<html>
+ <head>
+      <link rel="stylesheet" href="../css/newsletter.css">
+</head>
+     <body>
   <!-- Newsletter Start -->
   <div class="container-fluid position-relative pt-5 wow fadeInUp" data-wow-delay="0.1s" style="z-index: 1;">
         <div class="container">
+          <h1 id="signup-word" class="display-3">Sign Up Now For Special Offers</h1>
             <div class="bg-primary p-5">
                 <form class="mx-auto" style="max-width: 600px;">
                     <div class="input-group">
-                        <input type="text" class="form-control border-white p-3" placeholder="Your Email">
-                        <button class="btn btn-dark px-4">Sign Up</button>
+                        <a href="../pages/signup.php" id="signup-button" class="btn btn-dark">Sign Up</a>
                     </div>
                 </form>
             </div>
         </div>
     </div>
     <!-- Newsletter End -->
+</body>
+</html>

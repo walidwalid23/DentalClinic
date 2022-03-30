@@ -51,6 +51,7 @@
     <!-- Navbar Start -->
     <?php
    include '../includes/navbar.inc.php';
+   display_navbar("home");
     ?>
     <!-- Navbar End -->
 

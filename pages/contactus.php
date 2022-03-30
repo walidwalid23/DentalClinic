@@ -47,6 +47,7 @@
     <!-- Navbar Start -->
     <?php
    include '../includes/navbar.inc.php';
+   display_navbar("contactus");
     ?>
     <!-- Navbar End -->
 

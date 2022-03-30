@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Appointments</title>
+    <title>Appointment</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
     <!-- Favicon -->
@@ -48,6 +48,8 @@
     <!-- Navbar Start -->
     <?php
    include '../includes/navbar.inc.php';
+   #empty string because it's a button not a link to get highlighted when visited
+   display_navbar("");
     ?>
     <!-- Navbar End -->
 

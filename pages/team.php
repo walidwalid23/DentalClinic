@@ -48,6 +48,7 @@
     <!-- Navbar Start -->
     <?php
    include '../includes/navbar.inc.php';
+   display_navbar("team");
     ?>
     <!-- Navbar End -->
 
