@@ -3,5 +3,11 @@
     padding-left:40%;
     padding-top:15%;
 
+}
+
+#signup-button{
+    position:relative;
+    left:35%;
+   font-size:x-large;
 
 }
