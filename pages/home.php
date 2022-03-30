@@ -27,10 +27,10 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
-
+    
     <!-- Template Stylesheet -->
     <link href="../css/style.css" rel="stylesheet">
-    <!-- My Stylesheet -->
+    <!-- New Stylesheet -->
     <link rel="stylesheet" href="../css/home.css">
 
 </head>

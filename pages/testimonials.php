@@ -16,7 +16,7 @@
         rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
@@ -30,6 +30,8 @@
 
     <!-- Template Stylesheet -->
     <link href="../css/style.css" rel="stylesheet">
+     <!-- new Stylesheet -->
+     <link href="../css/testimonials.css" rel="stylesheet">
 </head>
 
 <body>
@@ -56,10 +58,8 @@
     <div class="container-fluid bg-primary py-5 hero-header mb-5">
         <div class="row py-3">
             <div class="col-12 text-center">
-                <h1 class="display-3 text-white animated zoomIn">Testimonial</h1>
-                <a href="" class="h4 text-white">Home</a>
-                <i class="far fa-circle text-white px-2"></i>
-                <a href="" class="h4 text-white">Testimonial</a>
+                <i id="testimonials-icon" class="fa-solid fa-person-circle-question"></i>
+                <h1 class="display-3 text-white animated zoomIn">Testimonials</h1>
             </div>
         </div>
     </div>

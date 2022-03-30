@@ -13,8 +13,8 @@
         href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap"
         rel="stylesheet">
 
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <!-- Icons and Fonts Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
@@ -28,6 +28,12 @@
 
     <!-- Template Stylesheet -->
     <link href="../css/style.css" rel="stylesheet">
+
+    <!-- New Stylesheet -->
+    <link href="../css/aboutus.css" rel="stylesheet">
+
+
+
 </head>
 
 <body>
@@ -55,13 +61,14 @@
     <div class="container-fluid bg-primary py-5 hero-header mb-5">
         <div class="row py-3">
             <div class="col-12 text-center">
-                <i class="far fa-circle text-white px-2"></i>
+                <i id="aboutus-icon" class="fa-solid fa-circle-info "></i>
                 <h1 class="display-3 text-white animated zoomIn">About Us</h1>
             </div>
         </div>
     </div>
     <!-- Hero End -->
-
+    <i class="fas fa-question"></i>
+    
 
     <!-- About Start -->
     <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
