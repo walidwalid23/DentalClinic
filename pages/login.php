@@ -45,22 +45,23 @@ display_navbar("");
     ?>
  <!-- Navbar End -->
  <!-- Login Form Start -->
- <form id="login-form" class="container" action=""  method="post">
-      <div >
+ <form action="loginvalidation.php"  method="post" id="login-form" class="container" >
+      <div class="form-group">
         <label for="email-login"> <b> Enter Your Email: </b> </label>
         <br>
-        <input type="email" class="form-control input-fields" id="email-login"  name="email" placeholder="Email">
+        <input type="email" class="form-control input-fields" id="email-login"  name="email" placeholder="Email" required>
+        <p id="email-error-p" class="login-error-message"></p>
       </div>
 
-        <p id="email-Error" class="login-error-message"></p>
 
         <div class="form-group">
           <label for="passwordlogin"> <b> Enter Your Password: </b> </label>
           <br>
-          <input type="password" class="form-control input-fields" id="password-login"  name="password" placeholder="Password">
+          <input type="password" class="form-control input-fields" id="password-login"  name="password" placeholder="Password" required>
+          <p id="password-error-p" class="login-error-message"></p>
         </div>
 
-        <p id="passwordError" class="login-error-message"></p>
+        
 
         <div class="form-check">
            <input type="checkbox" class="form-check-input" id="remember-box" name="rememberme">

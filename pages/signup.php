@@ -26,7 +26,7 @@
     <!-- Template Stylesheet -->
     <link href="../css/style.css" rel="stylesheet">
     <!-- login Stylesheet -->
-    <link href="../css/login.css" rel="stylesheet">
+    <link href="../css/signup.css" rel="stylesheet">
 </head>
 
 <body>
@@ -44,38 +44,66 @@ include '../includes/navbar.inc.php';
 display_navbar("");
     ?>
  <!-- Navbar End -->
- <!-- Login Form Start -->
- <form id="login-form" class="container" action=""  method="post">
-      <div >
-        <label for="email-login"> <b> Enter Your Email: </b> </label>
+ <!-- Signup Form Start -->
+ <form  action="signupvalidation.php"  method="post" id="signup-form" class="container">
+      <p id="joinus-word"> Join Us Now! </p>
+      <div class="form-group">
+        <label for="name-signup"> <b> Enter Your Name: </b> </label>
         <br>
-        <input type="email" class="form-control input-fields" id="email-login"  name="email" placeholder="Email">
+        <input type="text" class="form-control input-fields" id="name-signup"  name="name" placeholder="Name" required>
+
+        <p id="name-error-p" class="signup-error-message"></p>
+      </div>
+      <div class="form-group">
+        <p> <b> Select Your Gender: </b> </p>
+        <label for="male-radio">Male </label>
+        <input type="radio" class="form-check-input" value="male"  name="gender" id="male-radio" required>
+
+        <label for="female-radio"  class="form-check-label">Female </label>
+        <input type="radio" class="form-check-input" value="female"  name="gender" id="female-radio">
+        
+        <p id="gender-error-p" class="signup-error-message"></p>
+      </div>
+      
+      <div class="form-group">
+        <label for="-login"> <b> Enter Your BirthDate: </b> </label>
+        <br>
+        <input type="date" id="datefield" name="date" max="2007-01-01" required>
+        <p id="dateErrorP" class="error-message"></p>
       </div>
 
-        <p id="email-Error" class="login-error-message"></p>
+      <div class="form-group">
+          <label for="phonenumber-signup"> <b> Enter Your Phone Number: </b> </label>
+          <br>
+          <span id="country-code">+20</span>
+          <input type="tel" class="form-control input-fields" id="phonenumber-signup"  name="phonenumber" placeholder="Type Your Number" required>
+
+          <p id="phonenumber-error-p" class="signup-error-message"></p>
+        </div>
+
+      <div class="form-group">
+        <label for="email-signup"> <b> Enter Your Email: </b> </label>
+        <br>
+        <input type="email" class="form-control input-fields" id="email-signup"  name="email" placeholder="Email" required>
+
+        <p id="email-error-p" class="signup-error-message"></p>
+      </div>
 
         <div class="form-group">
-          <label for="passwordlogin"> <b> Enter Your Password: </b> </label>
+          <label for="password-signup"> <b> Enter Your Password: </b> </label>
           <br>
-          <input type="password" class="form-control input-fields" id="password-login"  name="password" placeholder="Password">
+          <input type="password" class="form-control input-fields" id="password-signup"  name="password" placeholder="Password" required>
+
+          <p id="password-error-p" class="signup-error-message"></p>
         </div>
 
-        <p id="passwordError" class="login-error-message"></p>
+        <p id="alreadyexists-error-p" class="signup-error-message"></p>
 
-        <div class="form-check">
-           <input type="checkbox" class="form-check-input" id="remember-box" name="rememberme">
-           <label for="remember-box"  class="form-check-label"><b>Remember me</b></label>
-        </div>
-        <p id="not-registered-error" class="login-error-message"></p>
-
-        <input type="submit" class="btn btn-primary" value="Login">
-        <br>
-        <span id="noaccount-text"> Don't Have An Account? </span>
-        <a href="signup.php" id="signup-button" class="btn btn-primary">Sign Up!</a>
+        <input type="submit" class="btn btn-primary" value="Sign Up">
 
     </form>
 
- <!-- Login Form End -->
+ <!-- Signup Form End -->
 
  <!-- Footer Start -->
  <?php include '../includes/footer.inc.php' ?>
