@@ -47,7 +47,7 @@ include '../includes/navbar.inc.php';
       <div >
         <label for="email-login"> <b> Enter Your Email: </b> </label>
         <br>
-        <input type="email" class="form-control input-field" id="email-login"  name="email" placeholder="Email">
+        <input type="email" class="form-control input-fields" id="email-login"  name="email" placeholder="Email">
       </div>
 
         <p id="email-Error" class="login-error-message"></p>
@@ -55,7 +55,7 @@ include '../includes/navbar.inc.php';
         <div class="form-group">
           <label for="passwordlogin"> <b> Enter Your Password: </b> </label>
           <br>
-          <input type="password" class="form-control input-field" id="password-login"  name="password" placeholder="Password">
+          <input type="password" class="form-control input-fields" id="password-login"  name="password" placeholder="Password">
         </div>
 
         <p id="passwordError" class="login-error-message"></p>
@@ -65,8 +65,11 @@ include '../includes/navbar.inc.php';
            <label for="remember-box"  class="form-check-label"><b>Remember me</b></label>
         </div>
         <p id="not-registered-error" class="login-error-message"></p>
+        
+        <input type="submit" class="btn btn-primary" value="Login">
         <br>
-        <input type="submit" id="login-submit" class="btn btn-primary">
+        <span id="noaccount-text"> Don't Have An Account? </span>
+        <a href="signup.php" id="signup-button" class="btn btn-primary">Sign Up!</a>
 
     </form>
 
