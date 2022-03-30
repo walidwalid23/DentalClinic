@@ -23,14 +23,52 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
-
     <!-- Template Stylesheet -->
     <link href="../css/style.css" rel="stylesheet">
+    <!-- login Stylesheet -->
+    <link href="../css/login.css" rel="stylesheet">
 </head>
 
 <body>
- <!-- Login Form Start -->
+    
+<!-- Topbar Start -->
+<?php
+   include '../includes/topbar.inc.php';
+    ?>
+ <!-- Topbar End -->
 
+ <!-- Navbar Start -->
+<?php
+include '../includes/navbar.inc.php';
+    ?>
+ <!-- Navbar End -->
+ <!-- Login Form Start -->
+ <form id="login-form" class="container" action=""  method="post">
+      <div >
+        <label for="email-login"> <b> Enter Your Email: </b> </label>
+        <br>
+        <input type="email" class="form-control input-field" id="email-login"  name="email" placeholder="Email">
+      </div>
+
+        <p id="email-Error" class="login-error-message"></p>
+
+        <div class="form-group">
+          <label for="passwordlogin"> <b> Enter Your Password: </b> </label>
+          <br>
+          <input type="password" class="form-control input-field" id="password-login"  name="password" placeholder="Password">
+        </div>
+
+        <p id="passwordError" class="login-error-message"></p>
+
+        <div class="form-check">
+           <input type="checkbox" class="form-check-input" id="remember-box" name="rememberme">
+           <label for="remember-box"  class="form-check-label"><b>Remember me</b></label>
+        </div>
+        <p id="not-registered-error" class="login-error-message"></p>
+        <br>
+        <input type="submit" id="login-submit" class="btn btn-primary">
+
+    </form>
 
  <!-- Login Form End -->
 
