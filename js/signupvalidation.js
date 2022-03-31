@@ -40,47 +40,48 @@ signupForm.addEventListener("submit", function (eventObj) {
         phonenumberValid = true;
     }
     //SERVER CHECKING
-    async function postToServer(usernameValue, passwordValue, emailValue, dateValue) {
-        try {
-
-            let postResponse = await axios.post("http://localhost/webproject/serversignupvalidation.php", {
-                username: usernameValue,
-                password: passwordValue,
-                email: emailValue,
-                date: dateValue
-
-            });
-            console.log(postResponse);
-
-            if (postResponse.data.error) {
-                //JSON IS SENT(IN CASE OF VALIDATION ERRORS)
-                let uniqueError = document.querySelector("#unique-error");
-                let errorMessage = postResponse.data.error;
-                uniqueError.innerText = errorMessage;
-            }
-            else if (postResponse.data.success) {
-                //DECODED JSON (OBJECT) CONTAINING SUCCESS IS SENT(IN CASE OF NO ERRORS)
-                //go to the home page
-
-                window.location.href = "profileimageform.php";
-
-            }
-            else {
-                document.write('<h2 style="color:red">' + postResponse.data + '</h2>');
-                document.write('<h6 style="color:red">' + postResponse.status + '</h6>');
-            }
-        }
-        catch (error) {
-
-            document.write('<h3 style="color:red">Error occured:' + error + '</h3>');
-        }
-    }
     /*
-        if (nameValid && passwordValid && phonenumberValid) {
-    
-            postToServer(username, password, email, date);
-        }
-        */
+ async function postToServer(usernameValue, passwordValue, emailValue, dateValue) {
+     try {
+
+         let postResponse = await axios.post("http://localhost/webproject/serversignupvalidation.php", {
+             username: usernameValue,
+             password: passwordValue,
+             email: emailValue,
+             date: dateValue
+
+         });
+         console.log(postResponse);
+
+         if (postResponse.data.error) {
+             //JSON IS SENT(IN CASE OF VALIDATION ERRORS)
+             let uniqueError = document.querySelector("#unique-error");
+             let errorMessage = postResponse.data.error;
+             uniqueError.innerText = errorMessage;
+         }
+         else if (postResponse.data.success) {
+             //DECODED JSON (OBJECT) CONTAINING SUCCESS IS SENT(IN CASE OF NO ERRORS)
+             //go to the home page
+
+             window.location.href = "profileimageform.php";
+
+         }
+         else {
+             document.write('<h2 style="color:red">' + postResponse.data + '</h2>');
+             document.write('<h6 style="color:red">' + postResponse.status + '</h6>');
+         }
+     }
+     catch (error) {
+
+         document.write('<h3 style="color:red">Error occured:' + error + '</h3>');
+     }
+ }
+ 
+     if (nameValid && passwordValid && phonenumberValid) {
+ 
+         postToServer(username, password, email, date);
+     }
+     */
 
 
 });
@@ -102,7 +103,7 @@ phonenumberField.addEventListener("input", function () {
 
 
 passwordField.addEventListener("input", function () {
-    if (passwordField.value >= 5) {
+    if (passwordField.value.length >= 5) {
         passwordErrorP.innerText = "";
     }
 
