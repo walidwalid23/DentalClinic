@@ -5,6 +5,7 @@ let emailField = loginForm.elements.email;
 let passwordField = loginForm.elements.password;
 let passwordErrorP = document.querySelector("#password-error-p");
 let rememberBox = loginForm.elements.rememberbox;
+
 loginForm.addEventListener("submit", function (eventObj) {
     //preventing the form from routing
     eventObj.preventDefault();
