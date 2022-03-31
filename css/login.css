@@ -1,16 +1,21 @@
-body{
+body {
 
-    background-color:#EEF9FF;
+    background-color: #EEF9FF;
 }
 
-#login-form{
-   color:black;
-   margin-top:7%;
-   margin-left:30%;
-   min-height:60%;
-  
+#login-form {
+    color: black;
+    margin-top: 7%;
+    margin-left: 30%;
+    min-height: 60%;
+
 }
 
-.input-fields{
-width:40%;
+.input-fields {
+    width: 40%;
+}
+
+.login-error-message {
+    color: red;
+
 }
