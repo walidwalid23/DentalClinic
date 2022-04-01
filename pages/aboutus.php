@@ -77,17 +77,26 @@
                 <div class="col-lg-7">
                     <div class="section-title mb-4">
                         <h5 class="position-relative d-inline-block text-primary text-uppercase">About Us</h5>
-                        <h1 class="display-5 mb-0">The World's Best Dental Clinic That You Can Trust</h1>
+                        <h1 class="display-5 mb-0">
+                            
+                        
+                        
+                        
+                        
+                        Meet your new dentist Dental done differently.</h1>
                     </div>
                     <h4 class="text-body fst-italic mb-4">The clinic is very proffesional</h4>
-                    <p class="mb-4">we offer a new  sevice to the patients  of the  clinic to comfor our customers</p>
+                    <p class="mb-4">we offer a new  sevice to the patients of the clinic to comfort our customers</p>
                     <div class="row g-3">
                         <div class="col-sm-6 wow zoomIn" data-wow-delay="0.3s">
-                            <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>Award Winning clinic</h5>
-                            <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>Professional Staff</h5>
+                            <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>DR Ahmed Hilal provided the latest in dental technology and a staff of 
+the highest qualifications to produce the utopia of dental surgeries.</h5>
+                            <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>DR Ahmed Hilal Dental Clinic offers its patients dental care provided by
+specialized professionals, using latest equipment all used in new ways for the patient to comfort and relax him and it is performed to conform high standards of quality of 
+medical care and dental service to save patient's time.</h5>
                         </div>
                         <div class="col-sm-6 wow zoomIn" data-wow-delay="0.6s">
-                            <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>24/7 Opened</h5>
+                            <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i> All of this services makes DR Ahmed Hilal Dental Clinic the suiatable place to achieve your dental care</h5>
                             <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i> helpful team </h5>
                         </div>
                     </div>
@@ -136,3 +145,14 @@
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
