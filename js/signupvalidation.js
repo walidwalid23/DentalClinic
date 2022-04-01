@@ -5,18 +5,16 @@ let passwordField = signupForm.elements.password;
 let nameErrorP = document.querySelector("#name-error-p");
 let phoneErrorP = document.querySelector("#phonenumber-error-p");
 let passwordErrorP = document.querySelector("#password-error-p");
-console.log("hey");
+
 signupForm.addEventListener("submit", function (eventObj) {
     //prevent form request
     eventObj.preventDefault();
-
     let name = nameField.value;
     let password = passwordField.value;
     let phonenumber = phonenumberField.value;
     let nameValid = false;
     let passwordValid = false;
     let phonenumberValid = false;
-
 
     //VALIDATIONS CONDITIONS
     //check name
