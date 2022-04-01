@@ -75,7 +75,6 @@ display_navbar("");
       <div class="form-group">
           <label for="phonenumber-signup"> <b> Enter Your Phone Number: </b> </label>
           <br>
-          <span id="country-code">+20</span>
           <input type="tel" class="form-control input-fields" id="phonenumber-signup"  name="phonenumber" placeholder="Type Your Number" required>
 
           <p id="phonenumber-error-p" class="signup-error-message"></p>
@@ -91,9 +90,7 @@ display_navbar("");
 
         <div class="form-group">
           <label for="password-signup"> <b> Enter Your Password: </b> </label>
-          <br>
           <input type="password" class="form-control input-fields" id="password-signup"  name="password" placeholder="Password" required>
-
           <p id="password-error-p" class="signup-error-message"></p>
         </div>
 
@@ -108,6 +105,9 @@ display_navbar("");
  <!-- Footer Start -->
  <?php include '../includes/footer.inc.php' ?>
  <!-- Footer End -->
+
+<!-- Sign Up Validation Javascript -->
+<script src="../js/signupvalidation.js"></script>
 <body>
 
 

@@ -20,6 +20,7 @@
     <link href="../lib/animate/animate.min.css" rel="stylesheet">
     <link href="../lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
     <link href="../lib/twentytwenty/twentytwenty.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
@@ -61,10 +62,8 @@ display_navbar("");
           <p id="password-error-p" class="login-error-message"></p>
         </div>
 
-        
-
         <div class="form-check">
-           <input type="checkbox" class="form-check-input" id="remember-box" name="rememberme">
+           <input type="checkbox" class="form-check-input" id="remember-box" name="rememberbox">
            <label for="remember-box"  class="form-check-label"><b>Remember me</b></label>
         </div>
         <p id="not-registered-error" class="login-error-message"></p>
@@ -81,6 +80,9 @@ display_navbar("");
  <!-- Footer Start -->
  <?php include '../includes/footer.inc.php' ?>
  <!-- Footer End -->
+
+ <!-- Login Validation Javascript -->
+<script src="../js/loginvalidation.js"></script>
 <body>
 
 
