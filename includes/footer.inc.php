@@ -32,7 +32,7 @@
                     <h3 class="text-white mb-4">Get In Touch</h3>
                     <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>73 Eltakka Street, Nasr City, Cairo</p>
                     <p class="mb-2"><i class="bi bi-envelope-open text-primary me-2"></i>hline@gmail.com</p>
-                    <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i>+01067494937</p>
+                    <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i>+201067494937</p>
                     <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i>02 24727529</p>
                 </div>
                 <div class="col-lg-3 col-md-6">

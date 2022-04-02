@@ -116,7 +116,8 @@
                     <div class="bg-secondary d-flex flex-column p-5" style="height: 300px;">
                         <h3 class="text-white mb-3">Call Us!</h3>
                         <p class="text-white">You Can Call Us Now To Schedule An Appointment At:.</p>
-                        <h2 class="text-white mb-0">+012 345 6789</h2>
+                        <h5 class="text-white mb-0">Landline: 02 24727529</h5>
+                        <h5 class="text-white mb-0">Mobile: +201067494937</h5>
                     </div>
                 </div>
             </div>
