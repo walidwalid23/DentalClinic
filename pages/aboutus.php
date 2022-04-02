@@ -78,15 +78,9 @@
                     <div class="section-title mb-4">
                         <h5 class="position-relative d-inline-block text-primary text-uppercase">About Us</h5>
                         <h1 class="display-5 mb-0">
-                            
-                        
-                        
-                        
-                        
-                        Meet your new dentist Dental done differently.</h1>
+                        We Are A Dental Clinic That You Can Trust.</h1>
                     </div>
-                    <h4 class="text-body fst-italic mb-4">The clinic is very proffesional</h4>
-                    <p class="mb-4">we offer a new  sevice to the patients of the clinic to comfort our customers</p>
+                    <p class="mb-4">we offer various services to the patients of the clinic to comfort our customers</p>
                     <div class="row g-3">
                         <div class="col-sm-6 wow zoomIn" data-wow-delay="0.3s">
                             <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>DR Ahmed Hilal provided the latest in dental technology and a staff of 
