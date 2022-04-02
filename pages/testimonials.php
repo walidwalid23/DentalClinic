@@ -85,7 +85,7 @@
  his execution was quite efficient and not to mention painless which is a big plus.
  The booking, confirmation, and follow up systems are handled efficiently and accurately.</p>
                             <hr class="mx-auto w-25">
-                            <h4 class="text-white mb-0">Omar</h4>
+                            <h4 class="text-white mb-0">Karim</h4>
                         </div>
                     </div>
                 </div>
