@@ -68,7 +68,7 @@
     <!-- Service Start -->
     <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container">
-            <div class="row g-5 mb-5">
+            <div class="row">
                 <!-- <div class="col-lg-5 wow zoomIn" data-wow-delay="0.3s" style="min-height: 400px;">
                     <div class="twentytwenty-container position-relative h-100 rounded overflow-hidden">
                         <img class="position-absolute w-100 h-100" src="img/before.jpg" style="object-fit: cover;">
@@ -80,77 +80,69 @@
                         <h5 class="position-relative d-inline-block text-primary text-uppercase">Our Services</h5>
                         <h1 class="display-5 mb-0">We Offer The Best Quality Dental Services</h1>
                     </div>
-                    <div class="row g-5">
-                        <div class="col-md-6 service-item wow zoomIn" data-wow-delay="0.6s">
+                    <div class="row">
+                        <div class="col-md-3 service-item wow zoomIn services" data-wow-delay="0.6s">
                             <div class="rounded-top overflow-hidden">
-                                <img class="img-fluid" src="img/service-1.jpg" alt=""> 
+                                <img class="img-fluid" src="https://23smiles.com/wp-content/uploads/2015/05/restoration-300x223.jpg" alt=""> 
                             </div>
-                            <div class="position-relative bg-light rounded-bottom text-center p-4">
+                            <div class="position-relative bg-light rounded-bottom text-center p-4 ">
                                 <h5 class="m-0">Restorative Dentistry</h5>
-                                <img src="https://23smiles.com/wp-content/uploads/2015/05/restoration-300x223.jpg"/>
                             </div>
                         </div>
-                        <div class="col-md-6 service-item wow zoomIn" data-wow-delay="0.9s">
+                        <div class="col-md-3  service-item wow zoomIn services" data-wow-delay="0.9s">
                             <div class="rounded-top overflow-hidden">
-                                <img class="img-fluid" src="img/service-2.jpg" alt="">
+                                <img class="img-fluid" src="https://www.infodentis.com/images-eng/dental_bridge_proper_design.jpg" alt="">
                             </div>
-                            <div class="position-relative bg-light rounded-bottom text-center p-4">
+                            <div class="position-relative bg-light rounded-bottom text-center p-4 ">
                                 <h5 class="m-0">Fixed Prothesis</h5>
-                                <img src="https://www.infodentis.com/images-eng/dental_bridge_proper_design.jpg"/>
                             </div>
                         </div>
-                        <div class="col-md-6 service-item wow zoomIn" data-wow-delay="0.9s">
+                        <div class="col-md-3 service-item wow zoomIn services" data-wow-delay="0.9s">
                             <div class="rounded-top overflow-hidden">
-                                <img class="img-fluid" src="img/service-2.jpg" alt="">
+                                <img class="img-fluid" src="https://www.dentalteamitaly.com/en/computedimage/preview-definitive-movable-prothesis.i821-k23ujcS-w280-h200-l2-c1-x1.jpg" alt="">
                             </div>
-                            <div class="position-relative bg-light rounded-bottom text-center p-4">
+                            <div class="position-relative bg-light rounded-bottom text-center p-4 ">
                                 <h5 class="m-0">Removable Prosthesis </h5>
-                                <img src="https://www.dentalteamitaly.com/en/computedimage/preview-definitive-movable-prothesis.i821-k23ujcS-w280-h200-l2-c1-x1.jpg"/>
                             </div>
                         </div>
-                        <div class="col-md-6 service-item wow zoomIn" data-wow-delay="0.9s">
+                        <div class="col-md-3 service-item wow zoomIn services" data-wow-delay="0.9s">
                             <div class="rounded-top overflow-hidden">
-                                <img class="img-fluid" src="img/service-2.jpg" alt="">
+                                <img class="img-fluid" src="https://almejharalhadet.ly/wp-content/uploads/2020/09/orthodontic-treatment-917x509-1.jpg" alt="">
                             </div>
-                            <div class="position-relative bg-light rounded-bottom text-center p-4">
+                            <div class="position-relative bg-light rounded-bottom text-center p-4 ">
                                 <h5 class="m-0">Orthodontic Treatment </h5>
-                                <img src="https://almejharalhadet.ly/wp-content/uploads/2020/09/orthodontic-treatment-917x509-1.jpg" height=200px width=270px/>
                             </div>
                         </div>
-                        <div class="col-md-6 service-item wow zoomIn" data-wow-delay="0.9s">
+                        <div class="col-md-3 service-item wow zoomIn services" data-wow-delay="0.9s">
                             <div class="rounded-top overflow-hidden">
-                                <img class="img-fluid" src="img/service-2.jpg" alt="">
+                                <img class="img-fluid" src="https://esmmidental.com/wp-content/uploads/2019/11/implantologia-dental2.jpg" alt="">
                             </div>
-                            <div class="position-relative bg-light rounded-bottom text-center p-4">
+                            <div class="position-relative bg-light rounded-bottom text-center p-4 ">
                                 <h5 class="m-0">Implantology </h5>
-                                <img src="https://esmmidental.com/wp-content/uploads/2019/11/implantologia-dental2.jpg"height=200px width=270px/>
                             </div>
                         </div>
-                        <div class="col-md-6 service-item wow zoomIn" data-wow-delay="0.9s">
+                        <div class="col-md-3 service-item wow zoomIn services" data-wow-delay="0.9s">
                             <div class="rounded-top overflow-hidden">
-                                <img class="img-fluid" src="img/service-2.jpg" alt="">
+                                <img class="img-fluid" src="https://dentdream.com/wp-content/uploads/2019/02/periodontoloji-1.jpg" alt="">
                             </div>
-                            <div class="position-relative bg-light rounded-bottom text-center p-4">
-                                <h5 class="m-0">Periodontology </h5>
-                                <img src="https://dentdream.com/wp-content/uploads/2019/02/periodontoloji-1.jpg"height=200px width=270px/>
+                            <div class="position-relative bg-light rounded-bottom text-center p-4 ">
+                                <h5 class="m-0">Periodontology</h5>
                             </div>
                         </div>
-                        <div class="col-md-6 service-item wow zoomIn" data-wow-delay="0.9s">
+                        <div class="col-md-3 service-item wow zoomIn services" data-wow-delay="0.9s">
                             <div class="rounded-top overflow-hidden">
-                                <img class="img-fluid" src="img/service-2.jpg" alt="">
+                                <img class="img-fluid" src="https://www.montgomerydentalcare.com/wp-content/uploads/2015/06/esthetic-dentistry-before-and-after-images-c.jpg" alt="">
                             </div>
-                            <div class="position-relative bg-light rounded-bottom text-center p-4">
+                            <div class="position-relative bg-light rounded-bottom text-center p-4 ">
                                 <h5 class="m-0">Esthetic Dentistry </h5>
-                                <img src="https://www.montgomerydentalcare.com/wp-content/uploads/2015/06/esthetic-dentistry-before-and-after-images-c.jpg"height=200px width=270px/>
                             </div>
                         </div>
-                        <div class="col-md-6 service-item wow zoomIn" data-wow-delay="0.9s">
+                        <div class="col-md-3 service-item wow zoomIn services" data-wow-delay="0.9s">
                             <div class="rounded-top overflow-hidden">
-                                <img class="img-fluid" src="img/service-2.jpg" alt="">
+                                <img class="img-fluid" src="https://lortonoralsurgery.com/wp-content/uploads/2018/10/difference-between-dentist-oral-surgeon-featured.jpg" alt="">
                             </div>
                             <div class="position-relative bg-light rounded-bottom text-center p-4">
                                 <h5 class="m-0">Oral Surgery </h5>
-                                <img src="https://lortonoralsurgery.com/wp-content/uploads/2018/10/difference-between-dentist-oral-surgeon-featured.jpg"height=200px width=270px/>
                             </div>
                         </div>
                     </div>
@@ -175,8 +167,7 @@
                     <div
                         class="position-relative bg-primary rounded h-100 d-flex flex-column align-items-center justify-content-center text-center p-4">
                         <h3 class="text-white mb-3">Make Appointment</h3>
-                        <p class="text-white mb-3">Clita ipsum magna kasd rebum at ipsum amet dolor justo dolor est
-                            magna stet eirmod</p>
+                        <p class="text-white mb-3">“Our word is our worth. We promise to do it right, timely, and for a fair price.”</p>
                         <h2 class="text-white mb-0">02 247 27529</h2>
                     </div>
                 </div>
