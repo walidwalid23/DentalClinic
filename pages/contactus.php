@@ -78,7 +78,7 @@
                         <div class="d-flex align-items-center mb-2">
                             <i class="bi bi-geo-alt fs-1 text-primary me-3"></i>
                             <div class="text-start">
-                                <h5 class="mb-0">Our Office</h5>
+                                <h5 class="mb-0">Location</h5>
                                 <span>73 Eltakka Street, Nasr City, Cairo</span>
                             </div>
                         </div>
