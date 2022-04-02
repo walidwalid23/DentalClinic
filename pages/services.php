@@ -167,8 +167,7 @@
                     <div
                         class="position-relative bg-primary rounded h-100 d-flex flex-column align-items-center justify-content-center text-center p-4">
                         <h3 class="text-white mb-3">Make Appointment</h3>
-                        <p class="text-white mb-3">Clita ipsum magna kasd rebum at ipsum amet dolor justo dolor est
-                            magna stet eirmod</p>
+                        <p class="text-white mb-3">“Our word is our worth. We promise to do it right, timely, and for a fair price.”</p>
                         <h2 class="text-white mb-0">02 247 27529</h2>
                     </div>
                 </div>

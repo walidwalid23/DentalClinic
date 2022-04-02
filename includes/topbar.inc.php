@@ -13,7 +13,7 @@
                         <p class="m-0"><i class="fa fa-envelope-open me-2"></i>hline@gmail.com</p>
                     </div>
                     <div class="py-2">
-                        <p class="m-0"><i class="fa fa-phone-alt me-2"></i>+01001462395</p>
+                        <p class="m-0"><i class="fa fa-phone-alt me-2"></i>02 24727529</p>
                     </div>
                 </div>
             </div>

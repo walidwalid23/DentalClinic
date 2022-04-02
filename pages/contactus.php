@@ -78,22 +78,22 @@
                         <div class="d-flex align-items-center mb-2">
                             <i class="bi bi-geo-alt fs-1 text-primary me-3"></i>
                             <div class="text-start">
-                                <h5 class="mb-0">Our Office</h5>
-                                <span>123 Street, New York, USA</span>
+                                <h5 class="mb-0">Location</h5>
+                                <span>73 Eltakka Street, Nasr City, Cairo</span>
                             </div>
                         </div>
                         <div class="d-flex align-items-center mb-2">
                             <i class="bi bi-envelope-open fs-1 text-primary me-3"></i>
                             <div class="text-start">
                                 <h5 class="mb-0">Email Us</h5>
-                                <span>info@example.com</span>
+                                <span>hline@gmail.com</span>
                             </div>
                         </div>
                         <div class="d-flex align-items-center">
                             <i class="bi bi-phone-vibrate fs-1 text-primary me-3"></i>
                             <div class="text-start">
                                 <h5 class="mb-0">Call Us</h5>
-                                <span>+012 345 6789</span>
+                                <span>02 24727529</span>
                             </div>
                         </div>
                     </div>
