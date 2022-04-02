@@ -86,7 +86,7 @@
                             <i class="bi bi-envelope-open fs-1 text-primary me-3"></i>
                             <div class="text-start">
                                 <h5 class="mb-0">Email Us</h5>
-                                <span>info@example.com</span>
+                                <span>hline@gmail.com</span>
                             </div>
                         </div>
                         <div class="d-flex align-items-center">
