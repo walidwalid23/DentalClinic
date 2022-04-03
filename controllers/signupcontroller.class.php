@@ -1,18 +1,18 @@
 <?php
 include '../models/signupmodel.class.php';
 
-class SignUpController{
+class SignUpController extends SignUpModel {
 private $name;
 private $gender;
-private $age;
+private $birth_date;
 private $phonenumber;
 private $email;
 private $password;
  
-function __construct($name, $gender, $age, $phonenumber, $email, $password ){
+function __construct($name, $gender, $birth_date, $phonenumber, $email, $password ){
   $this->name = $name;
   $this->gender = $gender;
-  $this->age = $age;
+  $this->birth_date = $birth_date;
   $this->phonenumber = $phonenumber;
   $this->email = $email;
   $this->password = $password;
@@ -21,37 +21,51 @@ function __construct($name, $gender, $age, $phonenumber, $email, $password ){
 
 //SIGN UP METHOD
 function signup(){
-  if(!name_valid()){
+  try{
+
+  if(!$this->name_valid()){
      return "Name Length Has To Be Atleast 3 Characters";
   }
-  else if(!gender_valid()){
+  else if(!$this->gender_valid()){
      return 'You Cannot Leave The Gender Field Empty';
   }
-  else if(!gender_valid()){
-    return 'You Cannot Leave The Gender Field Empty';
- }
-  else if(!age_valid()){
-    return 'You Cannot Leave The Age Field Empty';
+  else if(!$this->birth_date_valid()){
+    return 'You Cannot Leave The Birth Date Field Empty';
   }
-  else if(!phonenumber_valid()){
+  else if(!$this->phonenumber_valid()){
     return 'Please Enter A Valid Phone Number';
   }
-  else if(!email_valid()){
+  else if(!$this->email_valid()){
     return 'Please Enter A Valid Email';
   }
-  else if(!password_valid()){
+  else if(!$this->password_valid()){
     return 'Password Length Has To Be Atleast 6 Characters';
   }
-  else if(email_taken()){
-    return 'This Email Is Already Taken';
+  else if($this->email_taken()){
+    return 'The Email Is Already Taken';
   }
-  else if(phonenumber_taken()){
-    return 'This Phone Number Is Already Taken';
+  else if($this->phonenumber_taken()){
+    return 'The Phone Number Is Already Taken';
   }
  //sign up the user if all the test cases are valid
   else{
-     return $this->insertUser($this->name, $this->gender, $this->age, $this->phonenumber,
-      $this->email, $this->password );
+    #calling the insert method of the model class(parent)
+    $insert_result=$this->insertUser($this->name, $this->gender, $this->birth_date, $this->phonenumber,
+    $this->email, $this->password );
+    
+    if($insert_result==true){
+        //start session
+        session_start();
+        $_SESSION["user_email"]=$this->email;
+        return true;
+      }
+      else{
+         die("Couldn't Insert User Data");
+      }
+  }
+  }
+  catch(Exception $e){
+    die('Error: ' .$e->getMessage());
   }
 }
 //validation methods
@@ -75,8 +89,8 @@ function gender_valid(){
     }
 }
 
-function age_valid(){
-    if(empty($this->age)){
+function birth_date_valid(){
+    if(empty($this->birth_date)){
         return false;
     }
     else{
@@ -131,8 +145,6 @@ function phonenumber_taken(){
 
 
 }
-
-
 
 
 

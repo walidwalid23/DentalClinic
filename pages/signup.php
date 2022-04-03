@@ -21,6 +21,9 @@
     <link href="../lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
     <link href="../lib/twentytwenty/twentytwenty.css" rel="stylesheet" />
 
+    <!--Axios Library-->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
     <!-- Customized Bootstrap Stylesheet -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <!-- Template Stylesheet -->
@@ -106,7 +109,8 @@ display_navbar("");
  <?php include '../includes/footer.inc.php' ?>
  <!-- Footer End -->
 
-<!-- Sign Up Validation Javascript -->
+<!-- Sign Up Javascript -->
+<script src="../js/signupajax.js"></script>
 <script src="../js/signupvalidation.js"></script>
 <body>
 

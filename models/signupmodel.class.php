@@ -3,7 +3,7 @@ include '../database/db.class.php';
 
 class SignUpModel extends Database{
 
-protected function insertUser($name, $gender, $age, $phonenumber, $email, $password ){
+protected function insertUser($name, $gender, $birth_date, $phonenumber, $email, $password ){
  try{
      //Generate A Unique ID For The User
      $user_ID=uniqid();
@@ -11,8 +11,9 @@ protected function insertUser($name, $gender, $age, $phonenumber, $email, $passw
      $password=password_hash($password,PASSWORD_DEFAULT);
      //inserting the user data into the user table
      $db_obj=$this->connect();
-     $query_result=$db_obj->query("INSERT INTO users VALUES('$user_ID','$name','$email','$age',
-     '$gender','$password','$phonenumber','user')");
+     $user_type="user";
+     $query_result=$db_obj->query("INSERT INTO users VALUES('$user_ID','$name','$email','$birth_date',
+     '$gender','$password','$phonenumber','$user_type')");
      if($query_result==true){
          return true;
      }

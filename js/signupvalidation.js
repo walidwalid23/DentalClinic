@@ -1,4 +1,7 @@
 let signupForm = document.querySelector("#signup-form");
+let emailField = signupForm.elements.email;
+let birthDateField = signupForm.elements.date;
+let genderField = signupForm.elements.gender;
 let nameField = signupForm.elements.name;
 let phonenumberField = signupForm.elements.phonenumber;
 let passwordField = signupForm.elements.password;
@@ -6,9 +9,12 @@ let nameErrorP = document.querySelector("#name-error-p");
 let phoneErrorP = document.querySelector("#phonenumber-error-p");
 let passwordErrorP = document.querySelector("#password-error-p");
 
-signupForm.addEventListener("submit", function (eventObj) {
+signupForm.addEventListener("submit", async function (eventObj) {
     //prevent form request
     eventObj.preventDefault();
+    let email = emailField.value;
+    let birthDate = birthDateField.value;
+    let gender = genderField.value;
     let name = nameField.value;
     let password = passwordField.value;
     let phonenumber = phonenumberField.value;
@@ -37,49 +43,15 @@ signupForm.addEventListener("submit", function (eventObj) {
     else {
         phonenumberValid = true;
     }
-    //SERVER CHECKING
-    /*
- async function postToServer(usernameValue, passwordValue, emailValue, dateValue) {
-     try {
 
-         let postResponse = await axios.post("http://localhost/webproject/serversignupvalidation.php", {
-             username: usernameValue,
-             password: passwordValue,
-             email: emailValue,
-             date: dateValue
+    //SENDING POST REQUEST TO THE SERVER
+    if (nameValid && passwordValid && phonenumberValid) {
 
-         });
-         console.log(postResponse);
+        serverResponse = await signUpUser(name, gender, birthDate, phonenumber, email, password);
+        console.log(serverResponse);
+        console.log(serverResponse.data);
+    }
 
-         if (postResponse.data.error) {
-             //JSON IS SENT(IN CASE OF VALIDATION ERRORS)
-             let uniqueError = document.querySelector("#unique-error");
-             let errorMessage = postResponse.data.error;
-             uniqueError.innerText = errorMessage;
-         }
-         else if (postResponse.data.success) {
-             //DECODED JSON (OBJECT) CONTAINING SUCCESS IS SENT(IN CASE OF NO ERRORS)
-             //go to the home page
-
-             window.location.href = "profileimageform.php";
-
-         }
-         else {
-             document.write('<h2 style="color:red">' + postResponse.data + '</h2>');
-             document.write('<h6 style="color:red">' + postResponse.status + '</h6>');
-         }
-     }
-     catch (error) {
-
-         document.write('<h3 style="color:red">Error occured:' + error + '</h3>');
-     }
- }
- 
-     if (nameValid && passwordValid && phonenumberValid) {
- 
-         postToServer(username, password, email, date);
-     }
-     */
 
 
 });
