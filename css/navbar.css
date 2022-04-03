@@ -1,5 +1,15 @@
-#login-button{
-    margin-left:20px;
-  
-   
+#login-button {
+    margin-left: 20px;
+}
+
+#nav-options-list {
+    margin-left: 16px;
+}
+
+#appointments-button {
+    margin-right: 1%;
+}
+
+#dropdown-button {
+    margin-right: 1%;
 }

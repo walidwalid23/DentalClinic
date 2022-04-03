@@ -97,9 +97,9 @@ display_navbar("");
           <p id="password-error-p" class="signup-error-message"></p>
         </div>
 
-        <p id="alreadyexists-error-p" class="signup-error-message"></p>
-
         <input type="submit" class="btn btn-primary" value="Sign Up">
+
+        <p id="general-error-p" class="signup-error-message"></p>
 
     </form>
 

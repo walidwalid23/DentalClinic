@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="utf-8">
@@ -36,6 +36,12 @@
 </head>
 
 <body>
+    <?php
+    //destroy the sessions when the user logs out
+    if(isset($_GET["loggedout"])){
+    session_start();
+    session_destroy(); }
+    ?>
     <!-- Spinner Start -->
     <?php
    include '../includes/spinner.inc.php';

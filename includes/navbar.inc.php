@@ -6,9 +6,10 @@
   
   <!-- Navbar Start -->
   <?php 
+  session_start();
   function display_navbar($active_page){
  echo '     
-<nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm px-5 py-3 py-lg-0">
+<nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm px-2 py-lg-0">
         <a href="index.html" class="navbar-brand p-0">
             <h1 class="m-0 text-primary"><i class="fa fa-tooth me-2"></i>Modern Dental Clinic</h1>
         </a>
@@ -84,9 +85,29 @@
             
             
                 echo' </div>
-            <a href="appointment.php" class="btn btn-primary">Schedule Appointment</a>
-            <a id="login-button" href="login.php" class="btn btn-primary">Login</a>
-        </div>
+            <a href="appointment.php" class="btn btn-primary" id="appointments-button">Schedule Appointment</a>';
+   
+            if(isset($_SESSION["user_name"])){
+             $name=$_SESSION["user_name"];
+             echo'
+        <div class="dropdown" id="dropdown-button">
+            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             '.$name.'
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="../pages/home.php?loggedout=true">Log Out</a>
+        
+            </div>
+          </div>
+             ';
+            
+            }
+            else{
+              echo'<a id="login-button" href="login.php" class="btn btn-primary">Login</a>';
+            }
+            
+
+      echo' </div>
     </nav>';
   }
     ?>

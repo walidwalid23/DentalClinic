@@ -8,6 +8,7 @@ let passwordField = signupForm.elements.password;
 let nameErrorP = document.querySelector("#name-error-p");
 let phoneErrorP = document.querySelector("#phonenumber-error-p");
 let passwordErrorP = document.querySelector("#password-error-p");
+let generalErrorP = document.querySelector("#general-error-p");
 
 signupForm.addEventListener("submit", async function (eventObj) {
     //prevent form request
@@ -50,6 +51,12 @@ signupForm.addEventListener("submit", async function (eventObj) {
         serverResponse = await signUpUser(name, gender, birthDate, phonenumber, email, password);
         console.log(serverResponse);
         console.log(serverResponse.data);
+        if (serverResponse.data.success) {
+            window.location.href = "home.php";
+        }
+        else if (serverResponse.data.error) {
+            generalErrorP.innerText = serverResponse.data.error;
+        }
     }
 
 
