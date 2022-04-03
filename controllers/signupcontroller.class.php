@@ -1,4 +1,5 @@
 <?php
+include '../models/signupmodel.class.php';
 
 class SignUpController{
 private $name;
@@ -18,6 +19,41 @@ function __construct($name, $gender, $age, $phonenumber, $email, $password ){
 
 }
 
+//SIGN UP METHOD
+function signup(){
+  if(!name_valid()){
+     return "Name Length Has To Be Atleast 3 Characters";
+  }
+  else if(!gender_valid()){
+     return 'You Cannot Leave The Gender Field Empty';
+  }
+  else if(!gender_valid()){
+    return 'You Cannot Leave The Gender Field Empty';
+ }
+  else if(!age_valid()){
+    return 'You Cannot Leave The Age Field Empty';
+  }
+  else if(!phonenumber_valid()){
+    return 'Please Enter A Valid Phone Number';
+  }
+  else if(!email_valid()){
+    return 'Please Enter A Valid Email';
+  }
+  else if(!password_valid()){
+    return 'Password Length Has To Be Atleast 6 Characters';
+  }
+  else if(email_taken()){
+    return 'This Email Is Already Taken';
+  }
+  else if(phonenumber_taken()){
+    return 'This Phone Number Is Already Taken';
+  }
+ //sign up the user if all the test cases are valid
+  else{
+     return $this->insertUser($this->name, $this->gender, $this->age, $this->phonenumber,
+      $this->email, $this->password );
+  }
+}
 //validation methods
 function name_valid(){
 
@@ -80,15 +116,19 @@ function password_valid(){
   
   }
   
-function email_unique(){
+function email_taken(){
 
+    return $this->email_repeated($this->email);
 
 }
 
-function phonenumber_unique(){
+function phonenumber_taken(){
 
-    
+    return $this->phonenumber_repeated($this->phonenumber);
+
 }
+
+
 
 }
 
