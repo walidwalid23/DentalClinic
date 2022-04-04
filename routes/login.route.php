@@ -6,9 +6,9 @@ $email = $user_data_array["emailKey"];
 $password = $user_data_array["passwordKey"];
 $remember_me = $user_data_array["rememberMeKey"];
 //initializing the controller object
-$sign_up_controller=new SignUpController($email, $password, $remember_me);
+$login_controller=new LoginController($email, $password, $remember_me);
 //calling the sign up method
-$login_result=$sign_up_controller->login();
+$login_result=$login_controller->login();
 
 if($login_result===true){
    //the function returned true(succeeded)

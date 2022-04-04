@@ -2,3 +2,9 @@
     font-size: 3em;
     color: #EEF9FF;
 }
+
+#appointment-img {
+    margin-bottom: 5%;
+    max-width: 60%;
+    max-height: 60%;
+}

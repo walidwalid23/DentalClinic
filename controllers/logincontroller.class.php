@@ -1,7 +1,7 @@
 <?php
 include '../models/loginmodel.class.php';
 
-class SignUpController extends LoginModel {
+class LoginController extends LoginModel {
  private $email;
  private $password;
  private $rememberMe;
