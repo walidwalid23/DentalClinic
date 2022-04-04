@@ -36,12 +36,7 @@
 </head>
 
 <body>
-    <?php
-    //destroy the sessions when the user logs out
-    if(isset($_GET["loggedout"])){
-    session_start();
-    session_destroy(); }
-    ?>
+
     <!-- Spinner Start -->
     <?php
    include '../includes/spinner.inc.php';
@@ -66,7 +61,7 @@
         <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="w-100" src="../img/carousel-2.jpg" alt="Image">
+                    <img class="w-100" src="../images/carousel-2.jpg" alt="Image">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
                             <h5 class="text-white text-uppercase mb-3 animated slideInDown">Keep Your Teeth Healthy</h5>

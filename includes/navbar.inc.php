@@ -86,16 +86,18 @@
             
                 echo' </div>
             <a href="appointment.php" class="btn btn-primary" id="appointments-button">Schedule Appointment</a>';
-   
-            if(isset($_SESSION["user_name"])){
-             $name=$_SESSION["user_name"];
+       
+            if(isset($_SESSION["user_name"]) || isset($_COOKIE["user_name"])){
+                
+             $name=(isset($_SESSION["user_name"]))?$_SESSION["user_name"]:$_COOKIE["user_name"];
+
              echo'
-        <div class="dropdown" id="dropdown-button">
+         <div class="dropdown" id="dropdown-button">
             <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
              '.$name.'
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="../pages/home.php?loggedout=true">Log Out</a>
+            <a class="dropdown-item" href="../routes/logout.route.php?loggedout=true">Log Out</a>
         
             </div>
           </div>

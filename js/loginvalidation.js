@@ -5,8 +5,9 @@ let emailField = loginForm.elements.email;
 let passwordField = loginForm.elements.password;
 let passwordErrorP = document.querySelector("#password-error-p");
 let rememberBox = loginForm.elements.rememberbox;
+let generalErrorP = document.querySelector("#general-error-p");
 
-loginForm.addEventListener("submit", function (eventObj) {
+loginForm.addEventListener("submit", async function (eventObj) {
     //preventing the form from routing
     eventObj.preventDefault();
     let email = emailField.value;
@@ -22,42 +23,19 @@ loginForm.addEventListener("submit", function (eventObj) {
     else {
         passwordValid = true;
     }
-    //SERVER CHECKING
-    async function postToServer(usernameValue, passwordValue) {
-        try {
-            let postResponse = await axios.post("http://localhost/webproject/serverloginvalidation.php", {
-                username: usernameValue,
-                password: passwordValue,
-                rememberCheck: (rememberBoxCheck == true) ? "yes" : "no"
 
-            });
-            console.log(postResponse);
-
-            if (postResponse.data.error) {
-                //DECODED JSON (OBJECT) CONTAINING ERROR IS SENT(IN CASE OF VALIDATION ERRORS)
-                let matchError = document.querySelector("#match-error");
-                let errorMessage = postResponse.data.error;
-                matchError.innerText = errorMessage;
-            }
-            else {
-                //DECODED JSON (OBJECT) CONTAINING SUCCESS IS SENT(IN CASE OF NO ERRORS)
-                //go to the home page
-                if (postResponse.data.success) {
-
-                    window.location.href = "home.php";
-                }
-
-
-            }
+    //SENDING POST REQUEST TO THE SERVER//SERVER CHECKING
+    if (passwordValid) {
+        let loginResponse = await loginUser(email, password, rememberBoxCheck);
+        console.log(loginResponse.data);
+        if (serverResponse.data.success) {
+            window.location.href = "home.php";
         }
-        catch (error) {
-            document.write('<h3 style="color:red">Error occured:' + error + '</h3>');
+        else if (serverResponse.data.error) {
+            //display the error in the login page
+            generalErrorP.innerText = serverResponse.data.error;
         }
-    }
 
-    if (usernameValid && passwordValid) {
-
-        postToServer(username, password);
     }
 
 

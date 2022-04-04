@@ -9,9 +9,10 @@ protected function insertUser($name, $gender, $birth_date, $phonenumber, $email,
      $user_ID=uniqid();
      //hashing the password
      $password=password_hash($password,PASSWORD_DEFAULT);
-     //inserting the user data into the user table
+     //connecting to the database
      $db_obj=$this->connect();
      $user_type="user";
+     //inserting the user data into the user table
      $query_result=$db_obj->query("INSERT INTO users VALUES('$user_ID','$name','$email','$birth_date',
      '$gender','$password','$phonenumber','$user_type')");
      if($query_result==true){

@@ -39,7 +39,7 @@ function signup(){
     return 'Please Enter A Valid Email';
   }
   else if(!$this->password_valid()){
-    return 'Password Length Has To Be Atleast 6 Characters';
+    return 'Password Length Has To Be Atleast 5 Characters';
   }
   else if($this->email_taken()){
     return 'The Email Is Already Taken';
@@ -53,7 +53,7 @@ function signup(){
     $insert_result=$this->insertUser($this->name, $this->gender, $this->birth_date, $this->phonenumber,
     $this->email, $this->password );
     
-    if($insert_result==true){
+    if($insert_result===true){
         //start session
         session_start();
         $_SESSION["user_name"]=$this->name;

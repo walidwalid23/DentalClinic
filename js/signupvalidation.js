@@ -55,6 +55,7 @@ signupForm.addEventListener("submit", async function (eventObj) {
             window.location.href = "home.php";
         }
         else if (serverResponse.data.error) {
+            //display the error in the sign up page
             generalErrorP.innerText = serverResponse.data.error;
         }
     }

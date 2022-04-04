@@ -66,7 +66,7 @@ display_navbar("");
            <input type="checkbox" class="form-check-input" id="remember-box" name="rememberbox">
            <label for="remember-box"  class="form-check-label"><b>Remember me</b></label>
         </div>
-        <p id="not-registered-error" class="login-error-message"></p>
+        <p id="general-error-p" class="login-error-message"></p>
 
         <input type="submit" class="btn btn-primary" value="Login">
         <br>
@@ -82,6 +82,7 @@ display_navbar("");
  <!-- Footer End -->
 
  <!-- Login Validation Javascript -->
+<script src="../js/loginajax.js"></script>
 <script src="../js/loginvalidation.js"></script>
 <body>
 
