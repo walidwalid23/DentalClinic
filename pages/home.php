@@ -67,10 +67,10 @@
                             <h5 class="text-white text-uppercase mb-3 animated slideInDown">Keep Your Teeth Healthy</h5>
                             <h1 class="display-1 text-white mb-md-4 animated zoomIn">Experience The Best Quality Dental
                                 Treatment</h1>
-                            <a href="appointment.html"
+                            <a href="appointment.php"
                                 class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Schedule An
                                 Appointment</a>
-                            <a href="contactus.html"
+                            <a href="contactus.php"
                                 class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Contact Us</a>
                         </div>
                     </div>
@@ -89,7 +89,7 @@
                 <div class="col-lg-4 wow zoomIn" data-wow-delay="0.1s">
                     <div class="bg-primary d-flex flex-column p-5" style="height: 300px;">
                         <h4 class="text-white mb-3">Schedule An Appointment Online</h4>
-                        <a class="btn btn-light" href="">Schedule An Appointment</a>
+                        <a class="btn btn-light" href="appointment.php">Schedule An Appointment</a>
                         <h6 class="text-white mb-3">Opening Hours:</h6>
                         <div class="d-flex justify-content-between text-white mb-3">
                             <h6 class="text-white mb-0">Mon - Fri</h6>
@@ -136,26 +136,25 @@
                         <h5 class="position-relative d-inline-block text-primary text-uppercase">About Us</h5>
                         <h1 class="display-5 mb-0">We Are A Dental Clinic That You Can Trust</h1>
                     </div>
-                    <h4 class="text-body fst-italic mb-4">We Offer The Best Dental Services Through Our Professional and
-                        experienced staff and doctor.</h4>
+                    <h4 class="text-body fst-italic mb-4">We Offer The Best Dental Services Through Our Professional staff and doctor.</h4>
 
                     <div class="row g-3">
                         <div class="col-sm-6 wow zoomIn" data-wow-delay="0.3s">
-                            <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>Award Winning</h5>
+                            <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>We Prioritize Hygiene</h5>
                             <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>Professional Staff</h5>
                         </div>
                         <div class="col-sm-6 wow zoomIn" data-wow-delay="0.6s">
-                            <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>24/7 Open</h5>
+                            <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>Aftercare</h5>
                             <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>Fair Prices</h5>
                         </div>
                     </div>
-                    <a href="appointment.html" class="btn btn-primary py-3 px-5 mt-4 wow zoomIn"
+                    <a href="appointment.php" class="btn btn-primary py-3 px-5 mt-4 wow zoomIn"
                         data-wow-delay="0.6s">Schedule An Appointment</a>
                 </div>
                 <div class="col-lg-5" style="min-height: 500px;">
                     <div class="position-relative h-100">
                         <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s"
-                            src="img/about.jpg" style="object-fit: cover;">
+                            src="../images/homeimg1.png" style="object-fit: cover;" alt="image">
                     </div>
                 </div>
             </div>
@@ -172,8 +171,8 @@
                     <div class="offer-text text-center rounded p-5">
                         <h1 class="display-5 text-white">Save 30% On Your First Dental Checkup</h1>
                         <p class="text-white mb-4"> </p>
-                        <a href="appointment.html" class="btn btn-dark py-3 px-5 me-3">Schedule Appointment</a>
-                        <a href="aboutus.html" class="btn btn-light py-3 px-5">Read More</a>
+                        <a href="appointment.php" class="btn btn-dark py-3 px-5 me-3">Schedule Appointment</a>
+                        <a href="aboutus.php" class="btn btn-light py-3 px-5">Read More</a>
                     </div>
                 </div>
             </div>
@@ -182,84 +181,17 @@
     <!-- Offer End -->
 
 
-    <!-- Testimonial Start -->
-    <div class="container-fluid bg-primary bg-testimonial py-5 my-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row justify-content-center">
-                <div class="col-lg-7">
-                    <div class="owl-carousel testimonial-carousel rounded p-5 wow zoomIn" data-wow-delay="0.6s">
-                        <div class="testimonial-item text-center text-white">
-                            <img class="img-fluid mx-auto rounded mb-4" src="img/testimonial-1.jpg" alt="">
-                            <p class="fs-5">It is the best dental clinic I have ever been to.</p>
-                            <hr class="mx-auto w-25">
-                            <h4 class="text-white mb-0">Jessy</h4>
-                        </div>
-                        <div class="testimonial-item text-center text-white">
-                            <img class="img-fluid mx-auto rounded mb-4" src="img/testimonial-2.jpg" alt="">
-                            <p class="fs-5">They are experts.</p>
-                            <hr class="mx-auto w-25">
-                            <h4 class="text-white mb-0">Emma</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Testimonial End -->
-
     <!-- Team Start -->
-    <div class="container-fluid py-5">
+    <div class="container-fluid py-5" id="meet-dentist-div">
         <div class="container">
             <div class="row g-5">
-                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.1s">
+                <div class="col-lg-8 wow slideInUp" data-wow-delay="0.1s">
                     <div class="section-title bg-light rounded h-100 p-5">
                         <h5 class="position-relative d-inline-block text-primary text-uppercase">Our Dentist</h5>
                         <h1 class="display-6 mb-4">Meet Our Certified & Experienced Dentist</h1>
-                        <a href="team.html" class="btn btn-primary py-3 px-5">Find More Details About Your Dr</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
-                    <div class="team-item">
-                        <div class="position-relative rounded-top" style="z-index: 1;">
-                            <img class="img-fluid rounded-top w-100" src="img/team-1.jpg" alt="">
-                            <div
-                                class="position-absolute top-100 start-50 translate-middle bg-light rounded p-2 d-flex">
-                                <a class="btn btn-primary btn-square m-1" href="#"><i
-                                        class="fab fa-twitter fw-normal"></i></a>
-                                <a class="btn btn-primary btn-square m-1" href="#"><i
-                                        class="fab fa-facebook-f fw-normal"></i></a>
-                                <a class="btn btn-primary btn-square m-1" href="#"><i
-                                        class="fab fa-linkedin-in fw-normal"></i></a>
-                                <a class="btn btn-primary btn-square m-1" href="#"><i
-                                        class="fab fa-instagram fw-normal"></i></a>
-                            </div>
-                        </div>
-                        <div class="team-text position-relative bg-light text-center rounded-bottom p-4 pt-5">
-                            <h4 class="mb-2">Dr. John Doe</h4>
-                            <p class="text-primary mb-0">Implant Surgeon</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
-                    <div class="team-item">
-                        <div class="position-relative rounded-top" style="z-index: 1;">
-                            <img class="img-fluid rounded-top w-100" src="img/team-2.jpg" alt="">
-                            <div
-                                class="position-absolute top-100 start-50 translate-middle bg-light rounded p-2 d-flex">
-                                <a class="btn btn-primary btn-square m-1" href="#"><i
-                                        class="fab fa-twitter fw-normal"></i></a>
-                                <a class="btn btn-primary btn-square m-1" href="#"><i
-                                        class="fab fa-facebook-f fw-normal"></i></a>
-                                <a class="btn btn-primary btn-square m-1" href="#"><i
-                                        class="fab fa-linkedin-in fw-normal"></i></a>
-                                <a class="btn btn-primary btn-square m-1" href="#"><i
-                                        class="fab fa-instagram fw-normal"></i></a>
-                            </div>
-                        </div>
-                        <div class="team-text position-relative bg-light text-center rounded-bottom p-4 pt-5">
-                            <h4 class="mb-2">Dr. John Doe</h4>
-                            <p class="text-primary mb-0">Implant Surgeon</p>
-                        </div>
+                        <img src="../images/homeimg2.jpg" alt="image" style="max-width:800px;">
+
+                        <a href="team.php" class="btn btn-primary py-3 px-5">Find More Details About Your Dr</a>
                     </div>
                 </div>
             </div>
