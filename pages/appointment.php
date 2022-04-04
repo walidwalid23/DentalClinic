@@ -135,8 +135,8 @@
     </div>
     <!-- Appointment End -->
 
-      <!-- Newsletter Start -->
-      <?php include '../includes/newsletter.inc.php' ?>
+    <!-- Newsletter Start -->
+    <?php include '../includes/newsletter.inc.php' ?>
     <!-- Newsletter End -->
 
     <!-- Footer Start -->

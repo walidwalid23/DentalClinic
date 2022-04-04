@@ -74,16 +74,16 @@
                 <div class="col-lg-7">
                     <div class="owl-carousel testimonial-carousel rounded p-5 wow zoomIn" data-wow-delay="0.6s">
                         <div class="testimonial-item text-center text-white">
-                            <img class="img-fluid mx-auto rounded mb-4" src="img/testimonial-1.jpg" alt="">
+                            <img class="img-fluid mx-auto rounded mb-4" src="../images/person1.jpg" alt="image">
                             <p class="fs-5">Friendly, trustworthy, affordable and flexible. Simply amazing service.</p>
                             <hr class="mx-auto w-25">
                             <h4 class="text-white mb-0">Omar</h4>
                         </div>
                         <div class="testimonial-item text-center text-white">
-                            <img class="img-fluid mx-auto rounded mb-4" src="img/testimonial-2.jpg" alt="">
-                            <p class="fs-5">Recommended. Hygiene and clinic cleanliness is quite satisfactory. Dr. Ahmed Hilal displayed the experience and a deep awareness of the issues and best remedies;
- his execution was quite efficient and not to mention painless which is a big plus.
- The booking, confirmation, and follow up systems are handled efficiently and accurately.</p>
+                            <img class="img-fluid mx-auto rounded mb-4" src="../images/person2.png" alt="image">
+                            <p class="fs-5">Recommended. Hygiene is quite satisfactory. Dr. Ahmed Hilal provided a deep awareness of the issues and best remedies,
+                            his execution was quite efficient and not to mention painless which is a big plus.
+                            The booking, confirmation, and follow up systems are handled efficiently and accurately.</p>
                             <hr class="mx-auto w-25">
                             <h4 class="text-white mb-0">Karim</h4>
                         </div>

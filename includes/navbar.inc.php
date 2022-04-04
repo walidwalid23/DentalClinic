@@ -70,7 +70,7 @@
                 <a href="services.php" class="nav-item nav-link"> Our Services</a>
                 <a href="team.php" class="nav-item nav-link ">Our Dentist</a>
                 <a href="contactus.php" class="nav-item nav-link">Contact Us</a>
-                <a href="testimonial.php" class="nav-item nav-link  active">Testimonials</a>';
+                <a href="testimonials.php" class="nav-item nav-link  active">Testimonials</a>';
             }
             else{
                 echo'   
@@ -79,7 +79,7 @@
                 <a href="services.php" class="nav-item nav-link"> Our Services</a>
                 <a href="team.php" class="nav-item nav-link ">Our Dentist</a>
                 <a href="contactus.php" class="nav-item nav-link">Contact Us</a>
-                <a href="testimonial.php" class="nav-item nav-link">Testimonials</a>';
+                <a href="testimonials.php" class="nav-item nav-link">Testimonials</a>';
 
             }
             

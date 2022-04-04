@@ -80,27 +80,24 @@
                         <h1 class="display-5 mb-0">
                         We Are A Dental Clinic That You Can Trust.</h1>
                     </div>
-                    <p class="mb-4">we offer various services to the patients of the clinic to comfort our customers</p>
                     <div class="row g-3">
                         <div class="col-sm-6 wow zoomIn" data-wow-delay="0.3s">
-                            <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>DR Ahmed Hilal provided the latest in dental technology and a staff of 
-the highest qualifications to produce the utopia of dental surgeries.</h5>
-                            <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>DR Ahmed Hilal Dental Clinic offers its patients dental care provided by
-specialized professionals, using latest equipment all used in new ways for the patient to comfort and relax him and it is performed to conform high standards of quality of 
-medical care and dental service to save patient's time.</h5>
+                            <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>DR Ahmed Hilal Provided The Latest In Dental Technology And A Staff Of 
+                             The Highest Qualifications To Produce The Utopia Of Dental Surgeries.</h5>
+                            <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>DR Ahmed Hilal's Dental Clinic Has Been Providing Its Services To Thousands Of Patients Over The Past Years.</h5>
                         </div>
                         <div class="col-sm-6 wow zoomIn" data-wow-delay="0.6s">
-                            <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i> All of this services makes DR Ahmed Hilal Dental Clinic the suiatable place to achieve your dental care</h5>
-                            <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i> helpful team </h5>
+                            <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>Patients Satisfaction Is Our First Priority.</h5>
+                            <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>We Have Earned Many Certificates over the past few years </h5>
                         </div>
                     </div>
-                    <a href="appointment.html" class="btn btn-primary py-3 px-5 mt-4 wow zoomIn"
-                        data-wow-delay="0.6s">Make Appointment</a>
+                    <a href="appointment.php" class="btn btn-primary py-3 px-5 mt-4 wow zoomIn"
+                        data-wow-delay="0.6s">Schedule Appointment</a>
                 </div>
                 <div class="col-lg-5" style="min-height: 500px;">
                     <div class="position-relative h-100">
                         <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s"
-                            src="img/about.jpg" style="object-fit: cover;">
+                            src="../images/aboutusimage.jpg" style="object-fit: cover;">
                     </div>
                 </div>
             </div>
