@@ -1,4 +1,5 @@
 <?php
+     session_start();
     //destroy the sessions and cookies when the user logs out
     if(isset($_GET["loggedout"])){
         if(isset($_SESSION["user_name"])){
