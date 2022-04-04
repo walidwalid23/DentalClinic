@@ -82,9 +82,9 @@
                     </div>
                     <div class="row g-3">
                         <div class="col-sm-6 wow zoomIn" data-wow-delay="0.3s">
+                            <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>17+ Years Of Experience.</h5>
                             <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>DR Ahmed Hilal Provided The Latest In Dental Technology And A Staff Of 
                              The Highest Qualifications To Produce The Utopia Of Dental Surgeries.</h5>
-                            <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>DR Ahmed Hilal's Dental Clinic Has Been Providing Its Services To Thousands Of Patients Over The Past Years.</h5>
                         </div>
                         <div class="col-sm-6 wow zoomIn" data-wow-delay="0.6s">
                             <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>Patients Satisfaction Is Our First Priority.</h5>
