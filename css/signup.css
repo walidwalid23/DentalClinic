@@ -9,10 +9,18 @@ body {
     margin-left: 30%;
     min-height: 100%;
 
+
 }
 
 .input-fields {
     width: 40%;
+}
+
+#country-code {
+    font-weight: bold;
+    position: relative;
+    right: 245px;
+    top: 30px;
 }
 
 #joinus-word {

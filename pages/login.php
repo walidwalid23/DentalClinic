@@ -46,7 +46,7 @@ display_navbar("");
     ?>
  <!-- Navbar End -->
  <!-- Login Form Start -->
- <form action="loginvalidation.php"  method="post" id="login-form" class="container" >
+ <form action=""  method="post" id="login-form" class="container" >
       <div class="form-group">
         <label for="email-login"> <b> Enter Your Email: </b> </label>
         <br>

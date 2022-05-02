@@ -48,7 +48,7 @@ display_navbar("");
     ?>
  <!-- Navbar End -->
  <!-- Signup Form Start -->
- <form  action="signupvalidation.php"  method="post" id="signup-form" class="container">
+ <form  action=""  method="post" id="signup-form" class="container">
       <p id="joinus-word"> Join Us Now! </p>
       <div class="form-group">
         <label for="name-signup"> <b> Enter Your Name: </b> </label>
@@ -77,7 +77,7 @@ display_navbar("");
 
       <div class="form-group">
           <label for="phonenumber-signup"> <b> Enter Your Phone Number: </b> </label>
-          <br>
+          <span id="country-code">+20</span>
           <input type="tel" class="form-control input-fields" id="phonenumber-signup"  name="phonenumber" placeholder="Type Your Number" required>
 
           <p id="phonenumber-error-p" class="signup-error-message"></p>
