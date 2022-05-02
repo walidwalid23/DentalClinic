@@ -54,10 +54,9 @@ display_navbar("");
         <input type="text" class="code-fields" id="field2"  name="digit2" maxlength="1" required>
         <input type="text" class="code-fields" id="field3"  name="digit3" maxlength="1" required>
         <input type="text" class="code-fields" id="field4"  name="digit4" maxlength="1" required>
-        <p id="email-error-p" class="login-error-message"></p>
       </div>
-
-        <p id="general-error-p" class="login-error-message"></p>
+        <br>
+        <p id="verify-error-p" ></p>
 
         <input type="submit" id="submit-button" class="btn btn-primary">
         <br><br>

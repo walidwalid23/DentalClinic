@@ -14,7 +14,7 @@ protected function insertUser($name, $gender, $birth_date, $phonenumber, $email,
      $user_type="user";
      //inserting the user data into the user table
      $query_result=$db_obj->query("INSERT INTO users VALUES('$user_ID','$name','$email','$birth_date',
-     '$gender','$password','$phonenumber','$user_type')");
+     '$gender','$password','$phonenumber','$user_type',false)");
      if($query_result==true){
          return true;
      }

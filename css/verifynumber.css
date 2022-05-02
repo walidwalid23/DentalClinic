@@ -17,3 +17,8 @@
 #submit-button {
     margin-left: 13%;
 }
+
+#verify-error-p {
+    color: red;
+    font-weight: bold;
+}

@@ -38,7 +38,7 @@ signupForm.addEventListener("submit", async function (eventObj) {
     }
     else { passwordValid = true }
     //check phonenumber
-    if (phonenumber.length < 11) {
+    if (phonenumber.length < 10) {
         phoneErrorP.innerText = "Please Type A Valid Phone Number";
     }
     else {
@@ -49,10 +49,20 @@ signupForm.addEventListener("submit", async function (eventObj) {
     if (nameValid && passwordValid && phonenumberValid) {
 
         serverResponse = await signUpUser(name, gender, birthDate, phonenumber, email, password);
-        console.log(serverResponse);
-        console.log(serverResponse.data);
+
         if (serverResponse.data.success) {
-            window.location.href = "home.php";
+            //send the code sms then redirect user to the phone verification page
+            sendSMSResponse = await sendSMS(phonenumber);
+
+            if (sendSMSResponse.data.success) {
+                window.location.href = "verifynumber.php";
+            }
+
+            else if (sendSMSResponse.data.error) {
+                //display the error in the sign up page
+                generalErrorP.innerText = serverResponse.data.error;
+            }
+
         }
         else if (serverResponse.data.error) {
             //display the error in the sign up page

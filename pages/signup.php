@@ -112,6 +112,7 @@ display_navbar("");
 <!-- Sign Up Javascript -->
 <script src="../js/signupajax.js"></script>
 <script src="../js/signupvalidation.js"></script>
+<script src="../js/sendsms.js"></script>
 <body>
 
 
