@@ -16,13 +16,6 @@ body {
     width: 40%;
 }
 
-#country-code {
-    font-weight: bold;
-    position: relative;
-    right: 245px;
-    top: 30px;
-}
-
 #joinus-word {
     font-size: x-large;
     font-weight: bold;

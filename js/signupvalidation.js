@@ -48,25 +48,26 @@ signupForm.addEventListener("submit", async function (eventObj) {
     //SENDING POST REQUEST TO THE SERVER
     if (nameValid && passwordValid && phonenumberValid) {
 
-        serverResponse = await signUpUser(name, gender, birthDate, phonenumber, email, password);
+        signupResponse = await signUpUser(name, gender, birthDate, phonenumber, email, password);
 
-        if (serverResponse.data.success) {
+        if (signupResponse.data.success) {
             //send the code sms then redirect user to the phone verification page
-            sendSMSResponse = await sendSMS(phonenumber);
 
+            sendSMSResponse = await sendSMS(phonenumber);
+            console.log(sendSMSResponse);
             if (sendSMSResponse.data.success) {
-                window.location.href = "verifynumber.php";
+                window.location.href = "verifynumber.php?name=" + name + "&email=" + email + "&number=" + phonenumber;
             }
 
             else if (sendSMSResponse.data.error) {
                 //display the error in the sign up page
-                generalErrorP.innerText = serverResponse.data.error;
+                generalErrorP.innerText = sendSMSResponse.data.error;
             }
 
         }
-        else if (serverResponse.data.error) {
+        else if (signupResponse.data.error) {
             //display the error in the sign up page
-            generalErrorP.innerText = serverResponse.data.error;
+            generalErrorP.innerText = signupResponse.data.error;
         }
     }
 

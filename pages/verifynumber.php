@@ -60,9 +60,17 @@ display_navbar("");
 
         <input type="submit" id="submit-button" class="btn btn-primary">
         <br><br>
-        <span id="nomessage-text"> Didn't Receive A Code? </span>
-        <button type="button" id="resend-button" class="btn btn-primary">Resend Code</button>
+        <div id="no-receive-div">
+           <span id="nomessage-text"> Didn't Receive A Code? </span>
+           <button type="button" id="resend-button" class="btn btn-primary">Resend Code</button>
+        </div>
+        <!--Hidden Inputs-->
+        <?php
+        echo '<input type="hidden" id="name" value='.$_GET["name"].'>';
+        echo '<input type="hidden" id="email" value='.$_GET["email"].'>';
+        echo '<input type="hidden" id="phone-number" value='.$_GET["number"].'>';
 
+        ?>
 </form>
 
  <!-- Verify Form End -->
@@ -74,7 +82,11 @@ display_navbar("");
 <!-- Change Fields Javascript -->
 <script src="../js/verifyfieldschange.js"></script>
  <!-- Verify Number Javascript -->
-<script src="../js/verifynumberajax.js"></script>
+<script src="../js/sendsmsajax.js"></script>
+<!-- Verify Code Javascript -->
+<script src="../js/verifycode.js"></script>
+<!-- Resend SMS Javascript -->
+<script src="../js/resendSMS.js"></script>
 
 <body>
 

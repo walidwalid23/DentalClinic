@@ -13,13 +13,22 @@ protected function login_user($email, $password ){
      if($user_array){
          //the user email exists now check if the password matches
          $password_matched=password_verify($password,$user_array["password"]);
-         if($password_matched===true){return true;}
-         else{
-             return "Password Is Incorrect";
+         if($password_matched===true){
+              if($user_array["verified"]){
+                 return true;
+              }
+              else{
+                 //redirect user to verification page if he isn't verified
+                 header("Location:http://localhost/DentalClinic/pages/verifynumber.php?name=".$user_array["name"]."&email=".$user_array["email"]."&number=".$user_array["phoneNumber"]);
+              }
+            }
+
+        else{
+             return "Email Or Password Is Incorrect";
          }
      }
      else{
-         return "Email Doesn't Exist";
+         return "Email Or Password Is Incorrect";
      }
      
     }

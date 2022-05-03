@@ -54,12 +54,7 @@ class SignUpController extends SignUpModel {
     $this->email, $this->password );
     
     if($insert_result===true){
-      /*
-        //start session
-        session_start();
-        $_SESSION["user_name"]=$this->name;
-        $_SESSION["user_email"]=$this->email;
-        */
+      
         return true;
       }
       else{

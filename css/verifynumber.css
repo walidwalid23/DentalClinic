@@ -21,4 +21,13 @@
 #verify-error-p {
     color: red;
     font-weight: bold;
+    margin-left: 12%;
+}
+
+#resend-button {
+    font-size: small;
+}
+
+#no-receive-div {
+    margin-left: 8%;
 }

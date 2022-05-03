@@ -77,7 +77,6 @@ display_navbar("");
 
       <div class="form-group">
           <label for="phonenumber-signup"> <b> Enter Your Phone Number: </b> </label>
-          <span id="country-code">+20</span>
           <input type="tel" class="form-control input-fields" id="phonenumber-signup"  name="phonenumber" placeholder="Type Your Number" required>
 
           <p id="phonenumber-error-p" class="signup-error-message"></p>
@@ -112,7 +111,7 @@ display_navbar("");
 <!-- Sign Up Javascript -->
 <script src="../js/signupajax.js"></script>
 <script src="../js/signupvalidation.js"></script>
-<script src="../js/sendsms.js"></script>
+<script src="../js/sendsmsajax.js"></script>
 <body>
 
 
