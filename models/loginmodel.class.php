@@ -18,8 +18,8 @@ protected function login_user($email, $password ){
                  return true;
               }
               else{
-                 //redirect user to verification page if he isn't verified
-                 header("Location:http://localhost/DentalClinic/pages/verifynumber.php?name=".$user_array["name"]."&email=".$user_array["email"]."&number=".$user_array["phoneNumber"]);
+                 //return unverified message to redirect user to verification page if he isn't verified
+                 return "unverified";
               }
             }
 
@@ -40,7 +40,7 @@ protected function login_user($email, $password ){
 }
 
 
-protected function get_user_name($email){
+public function get_user_name($email){
     try{
         //connecting to the database
         $db_obj=$this->connect();
@@ -65,7 +65,30 @@ protected function get_user_name($email){
    
    }
      
-  
+   public function get_user_number($email){
+    try{
+        //connecting to the database
+        $db_obj=$this->connect();
+        //searching for the user using the email
+        $query_result=$db_obj->query("SELECT users.phoneNumber FROM users WHERE users.email='$email'");
+        $user_array=mysqli_fetch_array($query_result);
+        if($user_array){
+            //return the user name
+            return $user_array["phoneNumber"];
+
+        }
+
+        else{
+            die("error while getting the phone number");
+        }
+        
+       }
+   
+    catch(Exception $e) {
+           die('Error: ' .$e->getMessage());
+       }
+   
+   } 
 
 
 }

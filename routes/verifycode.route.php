@@ -8,7 +8,7 @@ if($sms_code==$_SESSION["verifycode"]){
   //code matches
    //UPDATE THE USER DATA IN THE DATABASE AND ADD HIM AS VERIFIED
    if(verifyUser($user_email)==true){
-   //add session values
+   //add session values to login the user
    $_SESSION["user_name"]=$user_name;
    $_SESSION["user_email"]=$user_email;
 

@@ -45,6 +45,7 @@ class LoginController extends LoginModel {
         }
         return $login_result;
       }
+      
       else{
           //return the error message
           return $login_result;

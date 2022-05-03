@@ -17,6 +17,18 @@ if($login_result===true){
    $jsonData=json_encode($success_response);
    echo $jsonData;
 }
+
+else if($login_result==="unverified"){
+   //if the user is not verified send unverified response to redirect him to the verification page
+   $unverified_response=["unverified"=>true,
+                         "email"=>$email,
+                         "name"=>$login_controller->get_user_name($email),
+                         "number"=>$login_controller->get_user_number($email)];
+   header('Content-Type: application/json');
+   $jsonData=json_encode($unverified_response);
+   echo $jsonData;
+
+}
 else{
  //the function returned the error message
    $error_response=["error"=>$login_result];

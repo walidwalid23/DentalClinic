@@ -61,6 +61,7 @@ display_navbar("");
         <input type="submit" id="submit-button" class="btn btn-primary">
         <br><br>
         <div id="no-receive-div">
+          <p id="resend-p"> </p>
            <span id="nomessage-text"> Didn't Receive A Code? </span>
            <button type="button" id="resend-button" class="btn btn-primary">Resend Code</button>
         </div>
@@ -69,7 +70,6 @@ display_navbar("");
         echo '<input type="hidden" id="name" value='.$_GET["name"].'>';
         echo '<input type="hidden" id="email" value='.$_GET["email"].'>';
         echo '<input type="hidden" id="phone-number" value='.$_GET["number"].'>';
-
         ?>
 </form>
 

@@ -28,6 +28,10 @@
     font-size: small;
 }
 
+#resend-p {
+    font-weight: bold;
+}
+
 #no-receive-div {
     margin-left: 8%;
 }

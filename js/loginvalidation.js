@@ -31,6 +31,12 @@ loginForm.addEventListener("submit", async function (eventObj) {
         if (serverResponse.data.success) {
             window.location.href = "home.php";
         }
+        //if the user is unverfied redirect him to verification page
+        else if (serverResponse.data.unverified) {
+            let unverfiedUser = serverResponse.data;
+            window.location.href = "verifynumber.php?name=" + unverfiedUser.name + "&email=" + email + "&number=" + unverfiedUser.number;
+        }
+        //display any other errors
         else if (serverResponse.data.error) {
             //display the error in the login page
             generalErrorP.innerText = serverResponse.data.error;
