@@ -48,7 +48,7 @@ function verifyUser($user_email){
      
        }
      catch(Exception $e) {
-      return false;
+      die('Could Not Verify User: ' .$e->getMessage());
           
        }
 }

@@ -1,7 +1,7 @@
   
 <html>
  <head>
-      <link rel="stylesheet" href="../css/newsletter.css">
+      <link rel="stylesheet" href="/DentalClinic/css/newsletter.css">
 </head>
      <body>
   <!-- Newsletter Start -->

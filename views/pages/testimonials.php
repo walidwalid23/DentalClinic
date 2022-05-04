@@ -7,7 +7,7 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
     <!-- Favicon -->
-    <link href="../img/favicon.ico" rel="icon">
+    <link href="../../img/favicon.ico" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -20,36 +20,36 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
-    <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="../lib/animate/animate.min.css" rel="stylesheet">
-    <link href="../lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
-    <link href="../lib/twentytwenty/twentytwenty.css" rel="stylesheet" />
+    <link href="../../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="../../lib/animate/animate.min.css" rel="stylesheet">
+    <link href="../../lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <link href="../../lib/twentytwenty/twentytwenty.css" rel="stylesheet" />
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="../css/style.css" rel="stylesheet">
+    <link href="../../css/style.css" rel="stylesheet">
      <!-- new Stylesheet -->
-     <link href="../css/testimonials.css" rel="stylesheet">
+     <link href="../../css/testimonials.css" rel="stylesheet">
 </head>
 
 <body>
        <!-- Spinner Start -->
        <?php
-   include '../includes/spinner.inc.php';
+   include '../../includes/spinner.inc.php';
     ?>
     <!-- Spinner End -->
 
     <!-- Topbar Start -->
     <?php
-   include '../includes/topbar.inc.php';
+   include '../../includes/topbar.inc.php';
     ?>
     <!-- Topbar End -->
 
     <!-- Navbar Start -->
     <?php
-   include '../includes/navbar.inc.php';
+   include '../../includes/navbar.inc.php';
    display_navbar("testimonials");
     ?>
     <!-- Navbar End -->
@@ -74,13 +74,13 @@
                 <div class="col-lg-7">
                     <div class="owl-carousel testimonial-carousel rounded p-5 wow zoomIn" data-wow-delay="0.6s">
                         <div class="testimonial-item text-center text-white">
-                            <img class="img-fluid mx-auto rounded mb-4" src="../images/person1.jpg" alt="image">
+                            <img class="img-fluid mx-auto rounded mb-4" src="../../images/person1.jpg" alt="image">
                             <p class="fs-5">Friendly, trustworthy, affordable and flexible. Simply amazing service.</p>
                             <hr class="mx-auto w-25">
                             <h4 class="text-white mb-0">Omar</h4>
                         </div>
                         <div class="testimonial-item text-center text-white">
-                            <img class="img-fluid mx-auto rounded mb-4" src="../images/person2.png" alt="image">
+                            <img class="img-fluid mx-auto rounded mb-4" src="../../images/person2.png" alt="image">
                             <p class="fs-5">Recommended. Hygiene is quite satisfactory. Dr. Ahmed Hilal provided a deep awareness of the issues and best remedies,
                             his execution was quite efficient and not to mention painless which is a big plus.
                             The booking, confirmation, and follow up systems are handled efficiently and accurately.</p>
@@ -96,11 +96,11 @@
 
 
    <!-- Newsletter Start -->
-    <?php include '../includes/newsletter.inc.php' ?>
+    <?php include '../../includes/newsletter.inc.php' ?>
     <!-- Newsletter End -->
 
     <!-- Footer Start -->
-    <?php include '../includes/footer.inc.php' ?>
+    <?php include '../../includes/footer.inc.php' ?>
     <!-- Footer End -->
 
     <!-- Back to Top -->
@@ -110,18 +110,18 @@
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../lib/wow/wow.min.js"></script>
-    <script src="../lib/easing/easing.min.js"></script>
-    <script src="../lib/waypoints/waypoints.min.js"></script>
-    <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="../lib/tempusdominus/js/moment.min.js"></script>
-    <script src="../lib/tempusdominus/js/moment-timezone.min.js"></script>
-    <script src="../lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
-    <script src="../lib/twentytwenty/jquery.event.move.js"></script>
-    <script src="../lib/twentytwenty/jquery.twentytwenty.js"></script>
+    <script src="../../lib/wow/wow.min.js"></script>
+    <script src="../../lib/easing/easing.min.js"></script>
+    <script src="../../lib/waypoints/waypoints.min.js"></script>
+    <script src="../../lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="../../lib/tempusdominus/js/moment.min.js"></script>
+    <script src="../../lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="../../lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="../../lib/twentytwenty/jquery.event.move.js"></script>
+    <script src="../../lib/twentytwenty/jquery.twentytwenty.js"></script>
 
     <!-- Template Javascript -->
-    <script src="../js/main.js"></script>
+    <script src="../../js/main.js"></script>
 </body>
 
 </html>

@@ -7,7 +7,7 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
     <!-- Favicon -->
-    <link href="../img/favicon.ico" rel="icon">
+    <link href="../../img/favicon.ico" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -20,18 +20,18 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
-    <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="../lib/animate/animate.min.css" rel="stylesheet">
-    <link href="../lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
-    <link href="../lib/twentytwenty/twentytwenty.css" rel="stylesheet" />
+    <link href="../../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="../../lib/animate/animate.min.css" rel="stylesheet">
+    <link href="../../lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <link href="../../lib/twentytwenty/twentytwenty.css" rel="stylesheet" />
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
     
     <!-- Template Stylesheet -->
-    <link href="../css/style.css" rel="stylesheet">
+    <link href="../../css/style.css" rel="stylesheet">
     <!-- New Stylesheet -->
-    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../../css/home.css">
 
 </head>
 
@@ -39,19 +39,19 @@
 
     <!-- Spinner Start -->
     <?php
-   include '../includes/spinner.inc.php';
+   include '../../includes/spinner.inc.php';
     ?>
     <!-- Spinner End -->
 
     <!-- Topbar Start -->
     <?php
-   include '../includes/topbar.inc.php';
+   include '../../includes/topbar.inc.php';
     ?>
     <!-- Topbar End -->
 
     <!-- Navbar Start -->
     <?php
-   include '../includes/navbar.inc.php';
+   include '../../includes/navbar.inc.php';
    display_navbar("home");
     ?>
     <!-- Navbar End -->
@@ -61,7 +61,7 @@
         <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="w-100" src="../images/carousel-2.jpg" alt="Image">
+                    <img class="w-100" src="../../images/carousel-2.jpg" alt="Image">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
                             <h5 class="text-white text-uppercase mb-3 animated slideInDown">Keep Your Teeth Healthy</h5>
@@ -154,7 +154,7 @@
                 <div class="col-lg-5" style="min-height: 500px;">
                     <div class="position-relative h-100">
                         <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s"
-                            src="../images/homeimg1.png" style="object-fit: cover;" alt="image">
+                            src="../../images/homeimg1.png" style="object-fit: cover;" alt="image">
                     </div>
                 </div>
             </div>
@@ -189,7 +189,7 @@
                     <div class="section-title bg-light rounded h-100 p-5">
                         <h5 class="position-relative d-inline-block text-primary text-uppercase">Our Dentist</h5>
                         <h1 class="display-6 mb-4">Meet Our Certified & Experienced Dentist</h1>
-                        <img src="../images/homeimg2.jpg" alt="image" style="max-width:800px;">
+                        <img src="../../images/homeimg2.jpg" alt="image" style="max-width:800px;">
 
                         <a href="team.php" class="btn btn-primary py-3 px-5">Find More Details About Your Dr</a>
                     </div>
@@ -200,11 +200,11 @@
     <!-- Team End -->
 
     <!-- Newsletter Start -->
-    <?php include '../includes/newsletter.inc.php' ?>
+    <?php include '../../includes/newsletter.inc.php' ?>
     <!-- Newsletter End -->
 
     <!-- Footer Start -->
-    <?php include '../includes/footer.inc.php' ?>
+    <?php include '../../includes/footer.inc.php' ?>
     <!-- Footer End -->
 
     <!-- Back to Top -->
@@ -214,18 +214,18 @@
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../lib/wow/wow.min.js"></script>
-    <script src="../lib/easing/easing.min.js"></script>
-    <script src="../lib/waypoints/waypoints.min.js"></script>
-    <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="../lib/tempusdominus/js/moment.min.js"></script>
-    <script src="../lib/tempusdominus/js/moment-timezone.min.js"></script>
-    <script src="../lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
-    <script src="../lib/twentytwenty/jquery.event.move.js"></script>
-    <script src="../lib/twentytwenty/jquery.twentytwenty.js"></script>
+    <script src="../../lib/wow/wow.min.js"></script>
+    <script src="../../lib/easing/easing.min.js"></script>
+    <script src="../../lib/waypoints/waypoints.min.js"></script>
+    <script src="../../lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="../../lib/tempusdominus/js/moment.min.js"></script>
+    <script src="../../lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="../../lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="../../lib/twentytwenty/jquery.event.move.js"></script>
+    <script src="../../lib/twentytwenty/jquery.twentytwenty.js"></script>
 
     <!-- Template Javascript -->
-    <script src="../js/main.js"></script>
+    <script src="../../js/main.js"></script>
 </body>
 
 </html>

@@ -6,7 +6,7 @@
     <title>Our Services</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <!-- Favicon -->
-    <link href="../img/favicon.ico" rel="icon">
+    <link href="../../img/favicon.ico" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -19,36 +19,36 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
-    <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="../lib/animate/animate.min.css" rel="stylesheet">
-    <link href="../lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
-    <link href="../lib/twentytwenty/twentytwenty.css" rel="stylesheet" />
+    <link href="../../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="../../lib/animate/animate.min.css" rel="stylesheet">
+    <link href="../../lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <link href="../../lib/twentytwenty/twentytwenty.css" rel="stylesheet" />
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="../css/style.css" rel="stylesheet">
+    <link href="../../css/style.css" rel="stylesheet">
     <!-- New Stylesheet -->
-    <link href="../css/services.css" rel="stylesheet">
+    <link href="../../css/services.css" rel="stylesheet">
 </head>
 
 <body>
     <!-- Spinner Start -->
     <?php
-   include '../includes/spinner.inc.php';
+   include '../../includes/spinner.inc.php';
     ?>
     <!-- Spinner End -->
 
     <!-- Topbar Start -->
     <?php
-   include '../includes/topbar.inc.php';
+   include '../../includes/topbar.inc.php';
     ?>
     <!-- Topbar End -->
 
     <!-- Navbar Start -->
     <?php
-   include '../includes/navbar.inc.php';
+   include '../../includes/navbar.inc.php';
    display_navbar("services");
     ?>
     <!-- Navbar End -->
@@ -149,7 +149,7 @@
                 </div>
                 <div class="col-lg-5 service-item wow zoomIn" data-wow-delay="0.9s">
                     <div class="position-relative bg-primary rounded h-100 d-flex flex-column align-items-center justify-content-center text-center p-4">
-                        <img id="appointment-img" src="../images/appointment.png" alt="image">
+                        <img id="appointment-img" src="../../images/appointment.png" alt="image">
                         <p class="text-white mb-3">“Our word is our worth. We promise to do it right, timely, and for a fair price.”</p>
                         <a href="appointment.php" class="btn btn-info py-3 px-5">Schedule Appointment</a>
                     </div>
@@ -163,11 +163,11 @@
     <!-- Service End -->
 
     <!-- Newsletter Start -->
-    <?php include '../includes/newsletter.inc.php' ?>
+    <?php include '../../includes/newsletter.inc.php' ?>
     <!-- Newsletter End -->
 
     <!-- Footer Start -->
-    <?php include '../includes/footer.inc.php' ?>
+    <?php include '../../includes/footer.inc.php' ?>
     <!-- Footer End -->
 
     <!-- Back to Top -->
@@ -177,18 +177,18 @@
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../lib/wow/wow.min.js"></script>
-    <script src="../lib/easing/easing.min.js"></script>
-    <script src="../lib/waypoints/waypoints.min.js"></script>
-    <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="../lib/tempusdominus/js/moment.min.js"></script>
-    <script src="../lib/tempusdominus/js/moment-timezone.min.js"></script>
-    <script src="../lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
-    <script src="../lib/twentytwenty/jquery.event.move.js"></script>
-    <script src="../lib/twentytwenty/jquery.twentytwenty.js"></script>
+    <script src="../../lib/wow/wow.min.js"></script>
+    <script src="../../lib/easing/easing.min.js"></script>
+    <script src="../../lib/waypoints/waypoints.min.js"></script>
+    <script src="../../lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="../../lib/tempusdominus/js/moment.min.js"></script>
+    <script src="../../lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="../../lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="../../lib/twentytwenty/jquery.event.move.js"></script>
+    <script src="../../lib/twentytwenty/jquery.twentytwenty.js"></script>
 
     <!-- Template Javascript -->
-    <script src="../js/main.js"></script>
+    <script src="../../js/main.js"></script>
 </body>
 
 </html>

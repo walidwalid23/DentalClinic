@@ -1,6 +1,6 @@
 <html>
 <head>
-<link rel="stylesheet" href="../css/navbar.css">
+<link rel="stylesheet" href="/DentalClinic/css/navbar.css">
 </head>
   <body>
   
@@ -97,7 +97,9 @@
              '.$name.'
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="../routes/logout.route.php?loggedout=true">Log Out</a>
+            <a class="dropdown-item" href="../pages/editprofile.php">Edit Profile</a>
+            <a class="dropdown-item" href="/DentalClinic/routes/logout.route.php?loggedout=true">Log Out</a>
+           
         
             </div>
           </div>
