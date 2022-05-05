@@ -1,4 +1,7 @@
-  
+ <?php 
+ //display the sign up ad only if the user isn't logged in
+if(!isset($_SESSION["user_name"]) && !isset($_COOKIE["user_name"])){
+ echo '
 <html>
  <head>
       <link rel="stylesheet" href="/DentalClinic/css/newsletter.css">
@@ -19,4 +22,6 @@
     </div>
     <!-- Newsletter End -->
 </body>
-</html>
+</html> ';
+}
+?>
