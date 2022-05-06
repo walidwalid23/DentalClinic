@@ -1,6 +1,6 @@
 async function signUpUser(name, gender, birthDate, phonenumber, email, password) {
     try {
-        serverResponse = await axios.post("http://localhost/DentalClinic/routes/signup.route.php",
+        let serverResponse = await axios.post("http://localhost/DentalClinic/routes/signup.route.php",
             {
                 nameKey: name, genderKey: gender, birthDateKey: birthDate, phonenumberKey: phonenumber,
                 emailKey: email, passwordKey: password

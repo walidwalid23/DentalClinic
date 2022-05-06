@@ -1,6 +1,5 @@
 <html>
 <head>
-    <meta charset="utf-8">
     <title>Edit Profile</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <!-- Favicon -->
@@ -63,10 +62,13 @@ display_navbar("");
           <label for="phonenumber-edit"> <b> Edit Your Phone Number: </b> </label>
 
           <?php 
-          include '../../models/editusermodel.class.php';
           $email=(isset($_SESSION["user_email"]))?$_SESSION["user_email"]:$_COOKIE["user_email"]; 
-          $editModel=new EditUserModel();
-          $number=$editModel->getUserNumber($email);
+          //connecting to the database
+          $db_obj=mysqli_connect("localhost","root","","dentalclinic");
+          //searching for the user number using the email
+          $query_result=$db_obj->query("SELECT users.phoneNumber FROM users WHERE users.email='$email'");
+          $user_array=mysqli_fetch_array($query_result);
+          $number=$user_array["phoneNumber"];
          echo' <input type="tel" class="form-control input-fields" id="phonenumber-edit"  name="phonenumber" value='.$number.'  required>';
           ?>
 
@@ -109,7 +111,7 @@ display_navbar("");
 <script src="../../js/main.js"></script>
 
 <!-- Edit Profile Javascript -->
-
+<script src="../../js/edituser.js"></script>
 <body>
 
 

@@ -48,12 +48,12 @@ signupForm.addEventListener("submit", async function (eventObj) {
     //SENDING POST REQUEST TO THE SERVER
     if (nameValid && passwordValid && phonenumberValid) {
 
-        signupResponse = await signUpUser(name, gender, birthDate, phonenumber, email, password);
+        let signupResponse = await signUpUser(name, gender, birthDate, phonenumber, email, password);
 
         if (signupResponse.data.success) {
             //send the code sms then redirect user to the phone verification page
 
-            sendSMSResponse = await sendSMS(phonenumber);
+            let sendSMSResponse = await sendSMS(phonenumber);
             console.log(sendSMSResponse);
             if (sendSMSResponse.data.success) {
                 window.location.href = "verifynumber.php?name=" + name + "&email=" + email + "&number=" + phonenumber;
