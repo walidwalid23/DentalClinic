@@ -51,7 +51,7 @@ signupForm.addEventListener("submit", async function (eventObj) {
         let signupResponse = await signUpUser(name, gender, birthDate, phonenumber, email, password);
 
         if (signupResponse.data.success) {
-            //send the code sms then redirect user to the phone verification page
+            //send the SMS code then redirect user to the phone verification page
 
             let sendSMSResponse = await sendSMS(phonenumber);
             console.log(sendSMSResponse);

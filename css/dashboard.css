@@ -1,0 +1,33 @@
+#dashboard-column {
+    width: 20%;
+    border-radius: 5%;
+
+}
+
+#dashboard-list {
+    list-style-type: none;
+}
+
+.dashboard-button {
+    margin: 5%;
+    width: 50%;
+
+}
+
+#appointments-table {
+    position: relative;
+
+}
+
+#appointments-p {
+    display: inline;
+    position: absolute;
+    left: 38%;
+    bottom: 63%;
+
+}
+
+#delete-button {
+    border: none;
+    font-size: large;
+}

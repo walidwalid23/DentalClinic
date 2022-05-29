@@ -1,5 +1,5 @@
 let resendButton = document.querySelector("#resend-button");
-let phoneNumber = document.querySelector("#phone-number").value;
+let phoneNumber = document.querySelector("#number").value;
 let resendP = document.querySelector("#resend-p");
 
 resendButton.addEventListener("click", async function (eventobj) {

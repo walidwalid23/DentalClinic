@@ -9,12 +9,10 @@ $digit2=strval(rand(0,9));
 $digit3=strval(rand(0,9));
 $digit4=strval(rand(0,9));
 $verify_code=$digit1.$digit2.$digit3.$digit4;
-//store the verification code in a SESSION
-session_start();
-$_SESSION["verifycode"]=$verify_code;
+
 //SEND THE SMS
-$sid = "AC16db6942fe9064acc1f424f93f3952ca"; // Your Account SID from twilio
-$token = "71175bc92c4f35ea60d6d55c2a67d3d2"; // Your Auth Token from twilio
+$sid = "AC16db6942fe9064acc1f424f93f3952ca"; // Account SID from twilio
+$token = "31642251c77a90be015939d40c2bd41b"; // Auth Token from twilio
 
 $client = new Twilio\Rest\Client($sid, $token);
 $message = $client->messages->create(
@@ -26,6 +24,9 @@ $message = $client->messages->create(
 );
 
 if($message->sid){
+  //store the verification code in a SESSION
+  session_start();
+  $_SESSION["verifycode"]=$verify_code;
   //sms is sent successfully
   $success_response=["success"=>"SMS Code Is Sent Successfully To: ".$phone_number];
   header('Content-Type: application/json');

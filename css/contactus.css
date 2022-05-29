@@ -1,4 +1,12 @@
-#contactus-icon{
-    font-size:3em;
-    color:#EEF9FF;
-    }
+#contactus-icon {
+    font-size: 3em;
+    color: #EEF9FF;
+}
+
+.all-container {
+    margin-bottom: 10%;
+}
+
+#response-message {
+    font-size: large;
+}

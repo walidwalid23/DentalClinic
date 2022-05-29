@@ -29,7 +29,7 @@
     <!-- Template Stylesheet -->
     <link href="../../css/style.css" rel="stylesheet">
 
-    <!-- New Stylesheet -->
+    <!-- Page Stylesheet -->
     <link href="../../css/aboutus.css" rel="stylesheet">
 
 

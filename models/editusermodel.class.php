@@ -35,7 +35,7 @@ class EditUserModel extends Database{
     try{
         //connecting to the database
         $db_obj=$this->connect();
-        //updating the user's name
+        //updating the user's number
         $update_result=$db_obj->query("UPDATE users SET users.phoneNumber='$number' WHERE users.email='$oldEmail'");
         
         return $update_result;
@@ -53,7 +53,7 @@ class EditUserModel extends Database{
     try{
         //connecting to the database
         $db_obj=$this->connect();
-        //updating the user's name
+        //updating the user's email
         $update_result=$db_obj->query("UPDATE users SET users.email='$email' WHERE users.email='$oldEmail'");
         if($update_result==true){
             session_start();

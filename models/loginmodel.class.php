@@ -24,10 +24,12 @@ protected function login_user($email, $password ){
             }
 
         else{
+            //if password is incorrect
              return "Email Or Password Is Incorrect";
          }
      }
      else{
+         //if user email doesn't exist
          return "Email Or Password Is Incorrect";
      }
      

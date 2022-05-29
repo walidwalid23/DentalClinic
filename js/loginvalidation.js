@@ -28,18 +28,18 @@ loginForm.addEventListener("submit", async function (eventObj) {
     if (passwordValid) {
         let loginResponse = await loginUser(email, password, rememberBoxCheck);
         console.log(loginResponse.data);
-        if (serverResponse.data.success) {
+        if (loginResponse.data.success) {
             window.location.href = "home.php";
         }
         //if the user is unverfied redirect him to verification page
-        else if (serverResponse.data.unverified) {
-            let unverfiedUser = serverResponse.data;
+        else if (loginResponse.data.unverified) {
+            let unverfiedUser = loginResponse.data;
             window.location.href = "verifynumber.php?name=" + unverfiedUser.name + "&email=" + email + "&number=" + unverfiedUser.number;
         }
         //display any other errors
-        else if (serverResponse.data.error) {
+        else if (loginResponse.data.error) {
             //display the error in the login page
-            generalErrorP.innerText = serverResponse.data.error;
+            generalErrorP.innerText = loginResponse.data.error;
         }
 
     }

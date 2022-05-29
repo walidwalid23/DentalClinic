@@ -24,13 +24,14 @@
     <link href="../../lib/animate/animate.min.css" rel="stylesheet">
     <link href="../../lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
     <link href="../../lib/twentytwenty/twentytwenty.css" rel="stylesheet" />
-
+    <!--Axios Library-->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <!-- Customized Bootstrap Stylesheet -->
     <link href="../../css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
     <link href="../../css/style.css" rel="stylesheet">
-    <!-- New Stylesheet -->
+    <!-- Page Stylesheet -->
     <link href="../../css/contactus.css" rel="stylesheet">
 </head>
 
@@ -66,7 +67,7 @@
 
 
     <!-- Contact Start -->
-    <div class="container-fluid py-5">
+    <div class="container-fluid py-5 all-container">
         <div class="container">
             <div class="row g-5">
                 <div class="col-xl-4 col-lg-6 wow slideInUp" data-wow-delay="0.1s">
@@ -99,26 +100,27 @@
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-6 wow slideInUp" data-wow-delay="0.3s">
-                    <form>
+                    <form id="contact-us-form">
                         <div class="row g-3">
                             <div class="col-12">
-                                <input type="text" class="form-control border-0 bg-light px-4" placeholder="Your Name"
-                                    style="height: 55px;">
+                                <input type="text" class="form-control border-0 bg-light px-4" id="name-input" placeholder="Your Name"
+                                    style="height: 55px;" required>
                             </div>
                             <div class="col-12">
-                                <input type="email" class="form-control border-0 bg-light px-4" placeholder="Your Email"
-                                    style="height: 55px;">
+                                <input type="email" class="form-control border-0 bg-light px-4" id="email-input" placeholder="Your Email"
+                                    style="height: 55px;" required>
                             </div>
                             <div class="col-12">
-                                <input type="text" class="form-control border-0 bg-light px-4" placeholder="Subject"
-                                    style="height: 55px;">
+                                <input type="text" class="form-control border-0 bg-light px-4" id="subject-input" placeholder="Subject"
+                                    style="height: 55px;" required>
                             </div>
                             <div class="col-12">
-                                <textarea class="form-control border-0 bg-light px-4 py-3" rows="5"
-                                    placeholder="Message"></textarea>
+                                <textarea class="form-control border-0 bg-light px-4 py-3" rows="5" id="message-input"
+                                    placeholder="Message" required></textarea>
                             </div>
                             <div class="col-12">
-                                <button class="btn btn-primary w-100 py-3" type="submit">Send Email</button>
+                                <button class="btn btn-primary w-100 py-3" id="email-button" type="submit">Send Email</button>
+                                <p id="response-message"></p>
                             </div>
                         </div>
                     </form>
@@ -157,6 +159,8 @@
 
     <!-- Template Javascript -->
     <script src="../../js/main.js"></script>
+    <!-- email contact Javascript -->
+    <script src="../../js/emailcontact.js"></script>
 </body>
 
 </html>

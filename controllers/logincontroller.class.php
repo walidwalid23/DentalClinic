@@ -81,11 +81,6 @@ function password_valid(){
   }
   
 
-
-
-
-
-
 }
 
 

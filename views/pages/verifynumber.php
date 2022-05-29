@@ -16,31 +16,31 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
-    <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="../lib/animate/animate.min.css" rel="stylesheet">
-    <link href="../lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
-    <link href="../lib/twentytwenty/twentytwenty.css" rel="stylesheet" />
+    <link href="../../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="../../lib/animate/animate.min.css" rel="stylesheet">
+    <link href="../../lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <link href="../../lib/twentytwenty/twentytwenty.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
     <!-- Template Stylesheet -->
-    <link href="../css/style.css" rel="stylesheet">
+    <link href="../../css/style.css" rel="stylesheet">
     <!-- verify number Stylesheet -->
-    <link href="../css/verifynumber.css" rel="stylesheet">
+    <link href="../../css/verifynumber.css" rel="stylesheet">
 </head>
 
 <body>
     
 <!-- Topbar Start -->
 <?php
-   include '../includes/topbar.inc.php';
+   include '../../includes/topbar.inc.php';
     ?>
  <!-- Topbar End -->
 
  <!-- Navbar Start -->
 <?php
-include '../includes/navbar.inc.php';
+include '../../includes/navbar.inc.php';
  #empty string because it's a button not a link to get highlighted when visited
 display_navbar("");
     ?>
@@ -67,26 +67,40 @@ display_navbar("");
         </div>
         <!--Hidden Inputs-->
         <?php
+      //verification for sign up
+     if(isset($_GET["name"]) && isset($_GET["email"]) && isset($_GET["number"]) ){
+        echo '<input type="hidden" id="signup-verify" >';
         echo '<input type="hidden" id="name" value='.$_GET["name"].'>';
         echo '<input type="hidden" id="email" value='.$_GET["email"].'>';
-        echo '<input type="hidden" id="phone-number" value='.$_GET["number"].'>';
+        echo '<input type="hidden" id="number" value='.$_GET["number"].'>';
+     }
+     //verification for unregistered users appointments scheduling
+     else{
+      echo '<input type="hidden" id="appointment-verify" >';
+      echo '<input type="hidden" id="name" value='.$_GET["name"].'>';
+      echo '<input type="hidden" id="gender" value='.$_GET["gender"].'>';
+      echo '<input type="hidden" id="number" value='.$_GET["number"].'>';
+      echo '<input type="hidden" id="age" value='.$_GET["age"].'>';
+      echo '<input type="hidden" id="date" value='.$_GET["date"].'>';
+      echo '<input type="hidden" id="time" value='. str_replace(' ', '-', $_GET["time"]).'>';
+     }
         ?>
 </form>
 
  <!-- Verify Form End -->
 
  <!-- Footer Start -->
- <?php include '../includes/footer.inc.php' ?>
+ <?php include '../../includes/footer.inc.php' ?>
  <!-- Footer End -->
 
 <!-- Change Fields Javascript -->
-<script src="../js/verifyfieldschange.js"></script>
+<script src="../../js/verifyfieldschange.js"></script>
  <!-- Verify Number Javascript -->
-<script src="../js/sendsmsajax.js"></script>
+<script src="../../js/sendsmsajax.js"></script>
 <!-- Verify Code Javascript -->
-<script src="../js/verifycode.js"></script>
+<script src="../../js/verifycode.js"></script>
 <!-- Resend SMS Javascript -->
-<script src="../js/resendSMS.js"></script>
+<script src="../../js/resendSMS.js"></script>
 
 <body>
 
