@@ -29,7 +29,6 @@ contactForm.addEventListener("submit", async function (event) {
     }
 
 
-<<<<<<< HEAD
 });
 
 
@@ -39,6 +38,3 @@ contactForm.addEventListener("submit", async function (event) {
 
 
 
-=======
-});
->>>>>>> ecdd0f4410e0d9dc84f42bffd59aa50165f49d61
