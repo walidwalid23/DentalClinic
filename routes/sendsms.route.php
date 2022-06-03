@@ -12,7 +12,7 @@ $verify_code=$digit1.$digit2.$digit3.$digit4;
 
 //SEND THE SMS
 $sid = "AC16db6942fe9064acc1f424f93f3952ca"; // Account SID from twilio
-$token = "31642251c77a90be015939d40c2bd41b"; // Auth Token from twilio
+$token = "e34cc9b690a9bbaacff41b981d076811"; // Auth Token from twilio
 
 $client = new Twilio\Rest\Client($sid, $token);
 $message = $client->messages->create(

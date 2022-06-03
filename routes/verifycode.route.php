@@ -16,6 +16,7 @@ if(isset($_GET["fromsignup"]) ){
       session_start();
       $_SESSION["user_name"]=$user_name;
       $_SESSION["user_email"]=$user_email;
+      $_SESSION["user_type"]="user";
      }
   
      //send success response 
@@ -48,7 +49,7 @@ if(isset($_GET["fromsignup"]) ){
 else if (isset($_GET["fromappointment"])){
   $user_name=$_GET["name"];
   $user_number=$_GET["number"];
-  $user_age=$_GET["age"];
+  $user_birth_date=$_GET["age"];
   $user_gender=$_GET["gender"];
   $start_date= $_GET["date"];
   $start_time= $_GET["time"];
@@ -58,7 +59,7 @@ else if (isset($_GET["fromappointment"])){
   if($sms_code==$_SESSION["verifycode"]){
     //code matches
      //ADD THE APPOINTMENT
-     $appointmentAddResult=$appointmentCont->addUnRegisteredAppointment($user_name,$user_number,$user_age,$user_gender);
+     $appointmentAddResult=$appointmentCont->addUnRegisteredAppointment($user_name,$user_number,$user_birth_date,$user_gender);
      if($appointmentAddResult==true){
      //send success response 
      $success_response=["success"=>"appointment added successfully"];

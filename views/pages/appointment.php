@@ -90,16 +90,18 @@
                             <div class="row g-3">
                                 <div class="col-12 col-sm-6">
                                     <div class="date" id="date1" data-target-input="nearest">
-                                        <input type="text" class="form-control bg-light border-0 datetimepicker-input"
+                                       <label for="date-field" style="color:black;font-size:medium;font-weight:bold">Appointment Date</label>
+                                        <input type="date" id="date-field" class="form-control bg-light border-0 "
                                             placeholder="Appointment Date" data-target="#date1"
-                                            data-toggle="datetimepicker" style="height: 55px;" name="date" required>
+                                             style="height: 55px;" name="date" required>
                                     </div>
                                 </div>
                                 <div class="col-12 col-sm-6">
                                     <div class="time" id="time1" data-target-input="nearest">
-                                        <input type="text" class="form-control bg-light border-0 datetimepicker-input"
+                                        <label for="time-field" style="color:black;font-size:medium;font-weight:bold">Appointment Time</label>
+                                        <input type="time" id="time-field" class="form-control bg-light border-0"
                                             placeholder="Appointment Time" data-target="#time1"
-                                            data-toggle="datetimepicker" style="height: 55px;" name="time" required>
+                                             style="height: 55px;" name="time" required>
                                     </div>
                                 </div>
                                 <div class="col-12">
@@ -117,29 +119,35 @@
                             <div class="row g-3">
                               
                                 <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control bg-light border-0" placeholder="Your Name"
-                                        style="height: 55px;" minlength="3" name="name" required>
+                                <label for="name-field" style="color:black;font-size:medium;font-weight:bold">First Name</label>
+                                    <input type="text" id="name-field" class="form-control bg-light border-0" 
+                                        style="height: 55px;" minlength="3" maxlength="20" placeholder="Your Name" name="name" required>
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <input type="tel" class="form-control bg-light border-0" placeholder="Your Number"
-                                        style="height: 55px;"  minlength="11" name="phonenumber" required>
+                                <label for="number-field" style="color:black;font-size:medium;font-weight:bold">Phone Number</label>
+                                    <input type="tel" id="number-field" class="form-control bg-light border-0" placeholder="Your Number"
+                                        style="height: 55px;"  minlength="11" maxlength="12" name="phonenumber" required>
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <input type="number" min="18" max="100" class="form-control bg-light border-0" placeholder="Your Age"
+                                <label for="birth-date" style="color:black;font-size:medium;font-weight:bold">BirthDate</label>
+                                    <input type="date" id="birth-date" class="form-control bg-light border-0" 
                                         style="height: 55px;" name="age" required>
                                 </div>
-                                <div class="col-12 col-sm-6">
-                                    <div class="date" id="date1" data-target-input="nearest">
-                                        <input type="text" class="form-control bg-light border-0 datetimepicker-input"
+                                <h1> </h1>
+                                <div class="col-12 col-sm-6"">
+                                    <div id="date1">
+                                       <label for="date-field" style="color:black;font-size:medium;font-weight:bold">Appointment Date</label>
+                                        <input type="date" id="date-field" class="form-control bg-light border-0"
                                             placeholder="Appointment Date" data-target="#date1"
-                                            data-toggle="datetimepicker" style="height: 55px;" name="date" required>
+                                            style="height: 55px;" name="date" required>
                                     </div>
                                 </div>
                                 <div class="col-12 col-sm-6">
                                     <div class="time" id="time1" data-target-input="nearest">
-                                        <input type="text" class="form-control bg-light border-0 datetimepicker-input"
+                                    <label for="time-field" style="color:black;font-size:medium;font-weight:bold">Appointment Time</label>
+                                        <input type="time" id="time-field" class="form-control bg-light border-0"
                                             placeholder="Appointment Time" data-target="#time1"
-                                            data-toggle="datetimepicker" style="height: 55px;" name="time" required>
+                                           style="height: 55px;" name="time" required>
                                     </div>
                                 </div>
                                 <div class="form-group bg-info">
@@ -160,6 +168,7 @@
                         ';
 
                     }
+                    echo '<p id="general-error-p" style="color:red;font-weight:bold"></p>';
                             ?>
                     </div>
                 </div>

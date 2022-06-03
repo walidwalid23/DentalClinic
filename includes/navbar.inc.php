@@ -6,7 +6,10 @@
   
   <!-- Navbar Start -->
   <?php 
-  session_start();
+    if(!isset($_SESSION)) 
+    { 
+      session_start();
+    } 
   function display_navbar($active_page){
  echo '     
 <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm px-2 py-lg-0">
@@ -84,9 +87,22 @@
             }
             
             
-                echo' </div>
-            <a href="appointment.php" class="btn btn-primary" id="appointments-button">Schedule Appointment</a>';
-       
+                echo' </div>';
+            //display schedule appointment or dashboard depending on the user type
+            $user_type;
+            if(isset($_SESSION["user_name"]) || isset($_COOKIE["user_name"])){ 
+                $user_type = (isset($_SESSION["user_type"]))?:$_COOKIE["user_type"];
+                if($user_type=="doctor" || $user_type=="secretary"){
+                  echo'<a href="dashboard.php" class="btn btn-primary" id="dashboard-button">Dashboard</a>';
+                }
+                else{
+                  echo'<a href="appointment.php" class="btn btn-primary" id="appointments-button">Schedule Appointment</a>';
+                }
+
+            }
+            else{
+               echo'<a href="appointment.php" class="btn btn-primary" id="appointments-button">Schedule Appointment</a>';
+            }
             if(isset($_SESSION["user_name"]) || isset($_COOKIE["user_name"])){
                 
              $name=(isset($_SESSION["user_name"]))?$_SESSION["user_name"]:$_COOKIE["user_name"];

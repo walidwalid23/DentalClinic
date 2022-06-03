@@ -1,0 +1,9 @@
+body {
+    background-color: black;
+}
+
+img {
+    position: relative;
+    width: 50%;
+    left: 25%;
+}

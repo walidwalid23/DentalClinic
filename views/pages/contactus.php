@@ -119,12 +119,12 @@
                                     placeholder="Message" required></textarea>
                             </div>
                             <div class="col-12">
-<<<<<<< HEAD
+
                                 <button class="btn btn-primary w-100 py-3" id="email-button" type="submit">Send Email</button>
                                 <p id="response-message"></p>
-=======
-                                <button class="btn btn-primary w-100 py-3" id="EmailButton" type="submit">Send Email</button>
->>>>>>> ecdd0f4410e0d9dc84f42bffd59aa50165f49d61
+
+       
+
                             </div>
                         </div>
                     </form>

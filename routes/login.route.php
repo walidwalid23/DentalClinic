@@ -12,7 +12,8 @@ $login_result=$login_controller->login();
 
 if($login_result===true){
    //the function returned true(succeeded)
-   $success_response=["success"=>"User Logged In Successfully"];
+   $user_type = (isset($_SESSION["user_type"]))?$_SESSION["user_type"]:$_COOKIE["user_type"];
+   $success_response=["success"=>"User Logged In Successfully","usertype"=>$user_type];
    header('Content-Type: application/json');
    $jsonData=json_encode($success_response);
    echo $jsonData;

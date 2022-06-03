@@ -26,24 +26,27 @@ class LoginController extends LoginModel {
   else{
     #calling the login method of the loginmodel class
     $login_result=$this->login_user($this->email, $this->password );
-    
-    if($login_result===true){
-        //get the name of the user using his email
-        $user_name=$this->get_user_name($this->email);
+    //if the result in an assoc array that contains the user data
+    if(is_array($login_result)){
         if($this->rememberMe){   
          $days_in_seconds=86400*3;
          //store login cookies if the user wants to be remembered
-         setcookie("user_name",$user_name,time()+$days_in_seconds , "/");
+         setcookie("user_name",$login_result["name"],time()+$days_in_seconds , "/");
          setcookie("user_email",$this->email,time()+$days_in_seconds,"/");
+         setcookie("user_type",$login_result["type"],time()+$days_in_seconds , "/");
+         setcookie("user_ID",$login_result["userID"],time()+$days_in_seconds , "/");
         }
         else{
         //start session
         session_start();
         //store sessions
-        $_SESSION["user_name"]=$user_name;
+        $_SESSION["user_name"]=$login_result["name"];
+        $_SESSION["user_type"]=$login_result["type"];
+        $_SESSION["user_ID"]=$login_result["userID"];
         $_SESSION["user_email"]=$this->email;
+
         }
-        return $login_result;
+        return true;
       }
       
       else{

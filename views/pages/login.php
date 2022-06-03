@@ -50,7 +50,7 @@ display_navbar("");
       <div class="form-group">
         <label for="email-login"> <b> Enter Your Email: </b> </label>
         <br>
-        <input type="email" class="form-control input-fields" id="email-login"  name="email" placeholder="Email" required>
+        <input type="email" class="form-control input-fields" id="email-login" maxlength="70"  name="email" placeholder="Email" required>
         <p id="email-error-p" class="login-error-message"></p>
       </div>
 
@@ -58,7 +58,7 @@ display_navbar("");
         <div class="form-group">
           <label for="passwordlogin"> <b> Enter Your Password: </b> </label>
           <br>
-          <input type="password" class="form-control input-fields" id="password-login"  name="password" placeholder="Password" required>
+          <input type="password" class="form-control input-fields" maxlength="80" id="password-login"  name="password" placeholder="Password" required>
           <p id="password-error-p" class="login-error-message"></p>
         </div>
 

@@ -1,20 +1,21 @@
 <!--CHECK FOR AUTHORIZATION --> 
 <?php
- include '../../generalclasses/authorization.class.php';
+  include '../../generalclasses/authorization.class.php';
 
- if(!Authorization::isAllowed()){
-  header("Location:unauthorized.php");
- }
+  if(!Authorization::isAllowed()){
+   header("Location:unauthorized.php");
+  }
+ 
 
 ?>
  
- <?php include '../appointmentview.class.php'; ?>
- <!DOCTYPE html>
+
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    
-    <title>Dashboard</title>
+    <meta charset="utf-8">
+    <title>Add Secretary</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
     <!-- Favicon -->
@@ -43,8 +44,7 @@
     <!-- Template Stylesheet -->
     <link href="../../css/style.css" rel="stylesheet">
     <!-- Page Stylesheet -->
-    <link href="../../css/dashboard.css" rel="stylesheet">
-
+    <link href="../../css/addsecretary.css" rel="stylesheet">
 </head>
 
 <body>
@@ -65,44 +65,38 @@
    display_navbar("");
     ?>
     <!-- Navbar End -->
-      <!-- Appointment View-->
+
+    <!-- Hero Start -->
+    <div class="container-fluid bg-primary py-5 hero-header mb-5">
+        <div class="row py-3">
+            <div class="col-12 text-center">
+                <h1 class="display-3 text-white animated zoomIn">Add Secretary</h1>
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+      <!-- Add Secretary Form Start -->
+                <div class="col-xl-4 col-lg-6">
+                    <form id="add-secretary-form" >
+                        <div class="row g-3">
+                            <div class="col-12">
+                                <input type="email" id="email-field" class="form-control border-0 bg-light px-4"  maxlength="70" name="email" placeholder="Secretary Email"
+                                 required>
+                            </div>
+                           
+                            <div class="col-12">
+
+                                <button class="btn btn-primary w-100 py-3" id="add-button" type="submit">Add Secretary</button>
+                                <p id="response-message"></p>
+
+                            </div>
+                        </div>
+                    </form>
+                </div>
+       
+    <!-- Add Secretary Form End -->
 
 
-
-  
-
- <!-- DASHBOARD START -->
- <!-- A vertical navbar start -->
- <div class="bg-light" id="dashboard-column">
-   <h2>Actions:</h2>
-  <ul id="dashboard-list">
-    <?php 
-     $user_type = (isset($_SESSION["user_type"]))?$_SESSION["user_type"]:$_COOKIE["user_type"];
-
-    echo'<li><a href="appointment.php" class="btn btn-primary dashboard-button">Add Appointment</a></li>';
-    if($user_type=="doctor"){
-      echo'<li><a href="addsecretary.php" class="btn btn-info dashboard-button">Add Secretary</a></li>
-      <li><a href="deletesecretary.php" class="btn btn-danger dashboard-button">Delete Secretary</a></li>';
-    }
-   ?>
-  </ul>
-</div>
-
- <!-- A vertical navbar end -->
-  <h1 id="appointments-p">Scheduled Appointments</h1>
-
-  <!-- Scheduled Appointments Table Start -->
-  <?php
-      $appointmentView = new AppointmentView();
-
-      $appointmentView->displayAppointments();
-  
-
-   ?>
-  <!-- Scheduled Appointments Table End -->
-
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
 
 
     <!-- JavaScript Libraries -->
@@ -120,13 +114,8 @@
 
     <!-- Template Javascript -->
     <script src="../../js/main.js"></script>
+    <!-- Add Secretary Javascript -->
+    <script src="../../js/addsecretary.js"></script>
 </body>
+
 </html>
-
-
-
-<?php
-
-
-
-?>

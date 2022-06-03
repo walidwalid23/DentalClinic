@@ -31,15 +31,16 @@ form.addEventListener("submit", async function (event) {
         let userName = document.querySelector("#name").value;
         let userGender = document.querySelector("#gender").value;
         let userNumber = document.querySelector("#number").value;
-        let userAge = document.querySelector("#age").value;
+        let userBirthDate = document.querySelector("#age").value;
         let date = document.querySelector("#date").value;
         let time = document.querySelector("#time").value;
 
         let verifyResponse = await axios.get("http://localhost/DentalClinic/routes/verifycode.route.php?code=" + code + "&name=" + userName + "&gender=" + userGender
-            + "&number=" + userNumber + "&age=" + userAge + "&date=" + date + "&time=" + time + "&fromappointment=" + true);
+            + "&number=" + userNumber + "&age=" + userBirthDate + "&date=" + date + "&time=" + time + "&fromappointment=" + true);
         console.log(verifyResponse);
         if (verifyResponse.data.success) {
             alert("Your Appointment Is Scheduled Successfully And You Shall Receive A Call Soon");
+            window.location.href = "home.php";
         }
         else if (verifyResponse.data.error) {
             //display the error in the verify code page

@@ -27,9 +27,15 @@ loginForm.addEventListener("submit", async function (eventObj) {
     //SENDING POST REQUEST TO THE SERVER//SERVER CHECKING
     if (passwordValid) {
         let loginResponse = await loginUser(email, password, rememberBoxCheck);
-        console.log(loginResponse.data);
+        console.log(loginResponse.data)
         if (loginResponse.data.success) {
-            window.location.href = "home.php";
+            if (loginResponse.data.usertype == "user") {
+
+                window.location.href = "home.php";
+            }
+            else if (loginResponse.data.usertype == "doctor" || loginResponse.data.usertype == "secretary") {
+                window.location.href = "dashboard.php";
+            }
         }
         //if the user is unverfied redirect him to verification page
         else if (loginResponse.data.unverified) {
