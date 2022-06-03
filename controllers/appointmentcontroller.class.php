@@ -52,7 +52,25 @@ class AppointmentController extends AppointmentModel
     
   }
 
+  function removeAppointment($appointmentID){
+    try{
+      if($this->deleteAppointment($appointmentID))
+      { 
+        return true;
   
+      }
+      else{
+        return false;
+      }
+    }
+  
+    catch(Exception $e) {
+        die('Error: ' .$e->getMessage());
+    }
+  
+  
+    
+  }
 
 
 }
